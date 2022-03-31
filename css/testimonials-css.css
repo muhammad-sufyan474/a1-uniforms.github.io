@@ -1,0 +1,156 @@
+
+.name-heading{
+    font-size: 35px;
+    /* font-weight: bold; */
+    /* color: white; */
+    color: orangered;
+    -webkit-text-stroke: 1px orangered;
+    text-align: center;
+    align-items: center;
+    margin:25px 0px;
+}
+.para{
+    color: rgba(0, 0, 0, 0.836);
+    font-size: 17px;
+    font-style: bold;
+    text-align: center;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.moh{
+    background-color: rgba(0, 0, 0, 0.021);
+    border-radius: 30% 0px 30% 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 2, 131, 0.507), 0 6px 20px 0 rgba(10, 1, 131, 0.514);
+    padding: 10px;
+    margin: 25px;
+}
+.stars{
+    margin: 0px 35%;
+}
+.stars{
+    margin-top: -10px;
+    align-items: center;
+    text-align: center;
+    padding: 2px;
+    font-size: 20px !important;
+   color: navy;
+}
+.sm-line-stars{
+    height: 2px;
+    margin-top: 20px;
+    width: 90%;
+    /* background-color: rgb(0, 87, 128); */
+    background-color: darkred;
+    border-radius: 20px;
+}
+.moh2{
+    background-color: rgba(0, 0, 0, 0.021);
+    border-radius: 30% 0px 30% 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 2, 131, 0.507), 0 6px 20px 0 rgba(10, 1, 131, 0.514);
+    padding: 10px;
+    margin: 25px;
+
+}
+.moh3{
+    background-color: rgba(0, 0, 0, 0.021);
+    border-radius: 30% 0px 30% 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 2, 131, 0.507), 0 6px 20px 0 rgba(10, 1, 131, 0.514);
+    padding: 10px;
+    margin: 25px;
+ 
+}
+.moh4{
+    background-color: rgba(0, 0, 0, 0.021);
+    border-radius: 30% 0px 30% 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 2, 131, 0.507), 0 6px 20px 0 rgba(10, 1, 131, 0.514);
+    padding: 10px;
+    margin: 25px;
+    
+}
+.moh5{
+    background-color: rgba(0, 0, 0, 0.021);
+    border-radius: 30% 0px 30% 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 2, 131, 0.507), 0 6px 20px 0 rgba(10, 1, 131, 0.514);
+    padding: 10px;
+    margin: 25px;
+    
+}
+.moh1{
+    background-color: rgba(0, 0, 0, 0.021);
+    border-radius: 30% 0px 30% 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 2, 131, 0.507), 0 6px 20px 0 rgba(10, 1, 131, 0.514);   
+    padding: 10px;
+    margin: 25px;
+  
+}
+.mohsin{
+    background-image: url("../images/testimonials-images/apple-touch-icon-180x180.png");
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+    border-radius: 50%;
+    background-size: cover;
+    margin-left: 32%;
+    margin-top: 4%;
+}
+.mohsin1{
+    background-image: url("../images/testimonials-images/pas1.png");
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+    border-radius: 50%;
+    background-size: cover;
+    margin-left: 32%;
+    margin-top: 4%;
+}
+.mohsin2{
+    background-image: url("../images/testimonials-images/pas4.png");
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+    border-radius: 50%;
+    background-size: cover;
+    margin-left: 32%;
+    margin-top: 4%;
+}
+.mohsin3{
+    background-image: url("../images/testimonials-images/pas3.png");
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+    border-radius: 50%;
+    background-size: cover;
+    margin-left: 32%;
+    margin-top: 4%;
+}
+.mohsin4{
+    background-image: url("../images/testimonials-images/pas1.png");
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+    border-radius: 50%;
+    background-size: cover;
+    margin-left: 32%;
+    margin-top: 4%;
+}
+.mohsin6{
+    background-image: url("../images/testimonials-images/cartoon-boy-images-4.jpg");
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+    border-radius: 50%;
+    background-size: cover;
+    margin-left: 32%;
+    margin-top: 4%;
+}
+.mohsin5{
+    background-image: url("../images/testimonials-images/pas3.png");
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+    border-radius: 50%;
+    background-size: cover;
+    margin-left: 32%;
+    margin-top: 4%;
+}

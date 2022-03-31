@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login || sign in | A-1 Uniforms</title>
+     <!-- fav icon -->
+     <link rel="icon" type="../images/main-logo-fav.png" href="../images/main-logo-fav.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body>
+       <style>
+           @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html,body{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+background: linear-gradient(315deg, rgba(8,0,134,1) 0%, rgba(51,0,106,1) 43%, rgba(255,51,0,1) 100%);
+}
+.wrapper{
+  overflow: hidden;
+  max-width: 390px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.458);
+  -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+
+}
+.wrapper .title-text{
+  display: flex;
+  width: 200%;
+}
+.wrapper .title{
+  width: 50%;
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+.wrapper .slide-controls{
+  position: relative;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  overflow: hidden;
+  margin: 30px 0 10px 0;
+  justify-content: space-between;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+.slide-controls .slide{
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 48px;
+  cursor: pointer;
+  z-index: 1;
+  transition: all 0.6s ease;
+}
+.slide-controls label.signup{
+  color: #000;
+}
+.slide-controls .slider-tab{
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  left: 0;
+  z-index: 0;
+  border-radius: 5px;
+  background: rgb(7,0,110);
+background: linear-gradient(315deg, rgba(7,0,110,1) 30%, rgba(44,0,92,1) 30%, rgba(255,51,0,1) 100%);
+  transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+input[type="radio"]{
+  display: none;
+}
+#signup:checked ~ .slider-tab{
+  left: 50%;
+}
+#signup:checked ~ label.signup{
+  color: #fff;
+  cursor: default;
+  user-select: none;
+}
+#signup:checked ~ label.login{
+  color: #000;
+}
+#login:checked ~ label.signup{
+  color: #000;
+}
+#login:checked ~ label.login{
+  cursor: default;
+  user-select: none;
+}
+.wrapper .form-container{
+  width: 100%;
+  overflow: hidden;
+}
+.form-container .form-inner{
+  display: flex;
+  width: 200%;
+}
+.form-container .form-inner form{
+  width: 50%;
+  transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+.form-inner form .field{
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+}
+span{
+  position: relative;
+   /* right: 38%; */
+   left: 90%;
+   z-index: 100;
+  font-size: 20px;
+  transform: translate(0, -50%);
+  top: -75%; 
+  cursor: pointer;
+}
+.form-inner form .field input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding-left: 15px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  border-bottom-width: 2px;
+  font-size: 17px;
+  transition: all 0.3s ease;
+}
+.form-inner form .field input:focus{
+  border-color: orangered;
+  box-shadow: inset 0 0 3px #800000;
+}
+.form-inner form .field input::placeholder{
+  color: #999;
+  transition: all 0.3s ease;
+}
+form .field input:focus::placeholder{
+  color: #b3b3b3;
+}
+.form-inner form .pass-link{
+  margin-top: 5px;
+}
+.form-inner form .signup-link{
+  text-align: center;
+  margin-top: 30px;
+}
+.form-inner form .pass-link a,
+.form-inner form .signup-link a{
+  color: orangered;
+  font-weight: 600;
+  text-decoration: none;
+}
+.form-inner form .pass-link a:hover,
+.form-inner form .signup-link a:hover{
+  text-decoration: underline;
+}
+form .btn{
+  height: 50px;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+form .btn .btn-layer{
+  height: 100%;
+  width: 300%;
+  position: absolute;
+  left: -100%;
+background: radial-gradient(circle, rgba(7,0,110,1) 0%, rgba(44,0,92,1) 30%, rgba(255,51,0,1) 100%);
+  border-radius: 5px;
+  transition: all 0.4s ease;;
+}
+form .btn:hover .btn-layer{
+  left: 0;
+}
+form .btn input[type="submit"]{
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  background: none;
+  border: none;
+  color: #fff;
+  padding-left: 0;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+@media (max-width:414px) {
+    .wrapper{
+  overflow: hidden;
+  max-width: 350px;
+}
+    
+}
+
+       </style>
+
+<div class="wrapper">
+    <div class="title-text">
+        <div class="title login">
+            <img src="images/main-logo.png" alt="" style="margin-top: -30px; height: 110px;">
+               Login Form
+            </div>
+            <div class="title signup">  
+            <img src="images/main-logo.png" alt="" style="margin-top: -30px; height: 110px;">
+               Signup Form
+            </div>
+         </div>
+         <div class="form-container">
+            <div class="slide-controls">
+               <input type="radio" name="slide" id="login" checked>
+               <input type="radio" name="slide" id="signup">
+               <label for="login" class="slide login">Login</label>
+               <label for="signup" class="slide signup">Signup</label>
+               <div class="slider-tab"></div>
+            </div>
+            <div class="form-inner">
+               <form action="#" class="login">
+                  <div class="field">
+                     <input type="email" id="useremail" placeholder="Email Address" required>
+                  </div>
+                  <div class="field">
+                     <input type="password" id="userpass" placeholder="Password" required>
+                     <span><i class="fa fa-eye" id="eye" aria-hidden="true" onclick="toggle()"></i></span>
+                  </div>
+                  <div class="pass-link">
+                     <a href="#">Forgot password?</a>
+                  </div>
+                  <div class="field btn">
+                     <div class="btn-layer"></div>
+                     <input type="submit" value="Login" onclick="login()">
+                  </div>
+                  <div class="signup-link">
+                     Not a member? <a href="">Signup now</a>
+                  </div>
+               </form>
+               <form action="#" class="signup">
+                  <div class="field">
+                     <input type="email" placeholder="Email Address" id="user-signin-email" required>
+                  </div>
+                  <div class="field">
+                     <input type="password" placeholder="Password" id="user-signin-pass" required>
+                     <span><i class="fa fa-eye" id="eye" aria-hidden="true" onclick="toggle2()"></i></span>
+                  </div>
+                  <div class="field">
+                     <input type="password" placeholder="Confirm password" id="user-signin-confirm-pass" required>
+                     <span><i class="fa fa-eye" id="eye" aria-hidden="true" onclick="toggle3()"></i></span>
+                  </div>
+                  <div class="field btn">
+                     <div class="btn-layer"></div>
+                     <input type="submit" value="Signup" onclick="signin()">
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+      <!-- logout or signout js -->
+      <script>
+        function signin()
+        {
+          var userSigninEmail = document.getElementById('user-signin-email').value
+            var userSigninPass = document.getElementById('user-signin-pass').value
+            var userSigninConfirmPass = document.getElementById('user-signin-confirm-pass').value
+            if(userSigninEmail == "" || userSigninPass == "" || userSigninConfirmPass == "")
+            {
+                alert('Feilds cannot be Empty')
+            }
+            else if(localStorage.getItem("Credentials"))
+            {
+                creds = JSON.parse(localStorage.getItem("Credentials"))
+            }
+            else{
+                creds = {}
+            }
+            creds["userpass"]=userpass;
+            localStorage.setItem("Logged In",11);
+            localStorage.setItem("Credentials",JSON.stringify(creds));
+            setTimeout(()=>{
+                window.location="index.html"
+            })
+            return false;
+            // window.location="index.html"
+        }
+      </script>
+      <!-- login to sign in or signin to login -->
+      <script>
+         const loginText = document.querySelector(".title-text .login");
+         const loginForm = document.querySelector("form.login");
+         const loginBtn = document.querySelector("label.login");
+         const signupBtn = document.querySelector("label.signup");
+         const signupLink = document.querySelector("form .signup-link a");
+         signupBtn.onclick = (()=>{
+           loginForm.style.marginLeft = "-50%";
+           loginText.style.marginLeft = "-50%";
+         });
+         loginBtn.onclick = (()=>{
+           loginForm.style.marginLeft = "0%";
+           loginText.style.marginLeft = "0%";
+         });
+         signupLink.onclick = (()=>{
+           signupBtn.click();
+           return false;
+         });
+      </script>
+      <!-- confirming empty fields -->
+      <script>
+        function login()
+        {
+            var useremail = document.getElementById('useremail').value
+            var userpass = document.getElementById('userpass').value
+            if(useremail == "" || userpass == "")
+            {
+                alert('Feilds cannot be Empty')
+            }
+            if(useremail != "aptech@gmail.com" || userpass != "aptech")
+            {
+                alert('Invalid ID or Password')
+            }
+            else if(localStorage.getItem("Credentials"))
+            {
+                creds = JSON.parse(localStorage.getItem("Credentials"))
+            }
+            else{
+                creds = {}
+            }
+            creds["userpass"]=userpass;
+            localStorage.setItem("Logged In",11);
+            localStorage.setItem("Credentials",JSON.stringify(creds));
+            setTimeout(()=>{
+                window.location="index.html"
+            })
+            return false;
+        }
+    </script>
+
+    <!-- eye wala kamm -->
+    <script>
+      var state = false;
+      function toggle(){
+        if(state){
+          document.getElementById("userpass").setAttribute("type","password");
+          state = false;
+        }
+        else{
+          document.getElementById("userpass").setAttribute("type","text");
+          state = true;
+        }
+      }
+
+      var state = false;
+      function toggle2(){
+        if(state){
+          document.getElementById("user-signin-pass").setAttribute("type","password");
+          state = false;
+        }
+        else{
+          document.getElementById("user-signin-pass").setAttribute("type","text");
+          state = true;
+        }
+      }
+
+      var state = false;
+      function toggle3(){
+        if(state){
+          document.getElementById("user-signin-confirm-pass").setAttribute("type","password");
+          state = false;
+        }
+        else{
+          document.getElementById("user-signin-confirm-pass").setAttribute("type","text");
+          state = true;
+        }
+      }
+    </script>
+   </body>
+</html>

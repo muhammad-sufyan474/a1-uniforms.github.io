@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Discounts | Home </title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@600&family=Libre+Baskerville:ital,wght@0,700;1,400&family=Lobster&family=Mea+Culpa&family=Play&family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <!-- fav icon -->
+      <link rel="icon" type="images/main-logo-fav.png" href="images/main-logo-fav.png">
+      <!-- footer css -->
+      <link rel="stylesheet" href="css/style-footer.css">
+      <!-- Social media css link -->
+      <link rel="stylesheet" href="css/social-media.css">
+      <!-- owl carousel -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      </head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif;
+        }
+
+        .container-body {
+            background-image: url('images/discounts-bg.png');
+            /* background-color : rgba(112, 26, 0, 0.507); */
+            background-color: rgba(128, 0, 128, 0.418);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-position: top;
+            background-blend-mode: darken;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+        .countdown-container {
+            display: flex;
+        }
+
+        .big-text {
+            font-size: 4rem;
+        }
+
+        .title {
+            margin: 10px;
+            text-align: center;
+            color: #fff;
+            text-shadow: 3px 3px 1px black;
+            letter-spacing: 2px;
+            font-size: 3rem;
+            line-height: 5.5rem;
+        }
+
+        .title span {
+            display: block;
+            font-weight: 500;
+            font-family: Arial, Helvetica, sans-serif;
+            color: navy;
+            -webkit-text-stroke: 3px navy;
+            text-shadow: 3px 3px 7px black;
+            font-size: 6rem;
+            letter-spacing: 1rem;
+        }
+
+        .wrapper-discount {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            min-height: 100vh;
+        }
+
+        .countdown-container>div {
+            margin: 0 2rem;
+            text-align: center;
+            border: 3px solid red;
+            padding: 5px 17px;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.589);
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+            box-sizing: border-box;
+            font-weight: 500;
+            color: orangered;
+            min-width: 150px;
+        }
+
+        .time-period {
+            color: yellow;
+            font-size: 17px;
+        }
+
+        .buy-now {
+            margin-top: 40px;
+            padding: 8px 30px;
+            font-size: 20px;
+            letter-spacing: 1px;
+            border-radius: 25px;
+            transition: .5s;
+            background-color: navy;
+            color: yellow;
+        }
+
+        .buy-now:hover {
+            color: orangered;
+            font-weight: 500;
+            font-size: 22px;
+            letter-spacing: 2px;
+            border-radius: 15px;
+        }
+
+        /* lucky draw poster starts */
+        .lucky-draw-heading-bg {
+            /* padding-top: 10px; */
+            text-align: center;
+            color: navy;
+            -webkit-text-stroke: 1px navy;
+            font-size: 55px;
+            font-family: 'Playfair Display', serif;
+            font-weight: bolder;
+            text-shadow: 2px 2px 4px rgb(123, 0, 148);
+        }
+
+        .lucky-draw-heading-sm {
+            font-family: 'Playfair Display', serif;
+            -webkit-text-stroke: 1px orangered;
+            text-align: center;
+            padding-top: 50px;
+            color: orangered;
+            font-size: 47px;
+            font-weight: 600;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px black;
+        }
+
+        .heading-wala-and {
+            font-size: 60px;
+            font-weight: 600;
+            color: yellow;
+            -webkit-text-stroke: 1px yellow;
+            text-shadow: 2px 2px 10px black;
+            margin: 20px;
+            font-family: f;
+        }
+
+        .sm-line-lucky-draw {
+            height: 5px;
+            width: 13%;
+            border-radius: 10px;
+            background-color: orangered;
+        }
+        .lucky-draw-img{
+            margin: 30px 0px;
+            border-radius: 17px;
+            border: 5px solid black;
+            box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 rgb(0, 0, 0);
+        }
+        /* lucky draw poster ends */
+
+
+
+        /* charity starts */
+        .humanity-love{
+            background-color: orangered;
+            margin: 20px 0;
+            padding: 10px;
+        }
+        .humaity-love-text{
+            color: white;
+            font-size: 40px;
+            font-weight: 500;
+            -webkit-text-stroke: 2px white;
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+        }
+        .sm-line-humanity {
+            margin-top: -15px;
+            height: 6px;
+            width: 13%;
+            border-radius: 10px;
+            background-color: navy;
+        }
+        .charity-para{
+            padding: 30px 5px 0px 50px;
+            /* letter-spacing: 1px; */
+            word-spacing: 2px;
+            font-weight: 400;
+            color: rgb(31, 29, 29);
+        }
+        .charity-heading{
+            /* text-align: center; */
+            padding: 5px 70px;
+            font-size: 40px;
+            letter-spacing: 2px;
+            font-weight: 600;
+            -webkit-text-stroke: 1px navy;
+            color: navy;
+        }
+        .sm-line-charity {
+            margin: -10px 30%;
+            height: 5px;
+            width: 20%;
+            border-radius: 10px;
+            background-color: orangered;
+        }
+
+        /* charity ends */
+
+        /* black friday starts */
+        .black-friday{
+            height: 80vh;
+            margin: 40px 0px;
+            background-image: url('images/discounts-black-friday.png');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            cursor: pointer;
+        }
+        /* black friday ends */
+
+
+
+
+        
+/* holiday sale starts */
+
+        .holiday-sale{
+            margin: 50px 0px;
+        }
+
+        .holiday-para{
+            padding: 0px 10px 0px 40px;
+            /* letter-spacing: 1px; */
+            word-spacing: 2px;
+            font-weight: 400;
+            color: rgb(31, 29, 29);
+        }
+        .holiday-heading{
+            text-align: left;
+            padding: 5px 50px;
+            font-size: 55px;
+            letter-spacing: 2px;
+            font-weight: 600;
+            -webkit-text-stroke: 2px navy;
+            color: navy;
+            font-family: 'Playfair Display', serif;
+            text-shadow: 2px 2px 5px black;
+        }
+        .sm-line-charity {
+            margin: -10px 30%;
+            height: 5px;
+            width: 20%;
+            border-radius: 10px;
+            background-color: orangered;
+        }
+        .holiday-img{
+            margin-top: 40px;
+            float: right !important;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* holiday sale ends */
+
+        @media (max-width:992px) {
+            .countdown-container>div {
+                margin: 0 1rem;
+            }
+        }
+        @media (max-width:767px) {
+            .container-body{
+                padding: 20px 0;
+            }
+            .countdown-container {
+                flex-wrap: wrap;
+            }
+
+            .countdown-container>div {
+                margin: 1rem auto;
+                max-width: 150px;
+            }
+
+            .title {
+                font-size: 1.5rem;
+                line-height: 3.5rem;
+                margin: 10px 0px;
+            }
+
+            .title span {
+                font-size: 3rem;
+                letter-spacing: 10px;
+            }
+            .lucky-draw-heading-bg {
+                font-size: 45px;
+            }
+            .lucky-draw-heading-sm {
+                font-size: 40px;
+            }
+            .humaity-love-text{
+                font-size: 30px;
+            }
+        }
+    </style>
+
+<!-- css completed -->
+
+
+  <!-- nav bar starts -->
+  <section id="home">
+    <nav class="navbar navbar-expand-lg navbar-light bgwhite py-4 fixed-top">
+      <div class="container">
+        <a href="index.html" class="order-lg-0">
+          <!-- logo  -->
+          <!-- <img src="images/logo.jpg" alt="" height="75px" width="130px"> -->
+          <!-- <img src="images/unnamed-155x210 ....png" height="75px" alt=""> -->
+          <img src="images/main-logo.png" alt="" height="75px">
+        </a>
+          <div class="order-lg-2 nav-btns" style="margin-right: -10px;">
+            <button class="btn position-relative">
+              <i class="fa fa-shopping-cart" onclick="cart()"></i>
+              <span class="position-absolute top-0 start-100 translate-middle badge label">2</span>
+            </button>
+            <button class="btn position-relative">
+              <i class="fa fa-search" onclick="search()"></i>
+              <!-- <span class="position-absolute top-0 start-100 translate-middle badge label">2</span> -->
+            </button>
+            <button class="btn position-relative">
+              <i class="fa fa-user" onclick="login()"></i>
+            </button>
+
+          </div>
+          <button class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span>
+            <i class="fa fa-bars" id="hamberg-icon"></i>
+          </span>
+          </button>
+  
+          <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+            <ul class="navbar-nav mx-auto text-center">
+              <li class="nav-item px-2 py-2">
+                <a href="index.html" class="nav-link text-uppercase ">Home</a>
+              </li>
+              <li class="nav-item px-2 py-2">
+                <a href="aboutus.html" class="nav-link text-uppercase">About Us</a>
+              </li>
+              <li class="nav-item px-2 py-2 border-0">
+                <!-- <a href="#why_us" class="nav-link text-uppercase">Products</a> -->
+                <li class="nav-item px-2 py-2">
+                  <div class="dropdown">
+                    <button class="btn school-wala-dropdown" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                        PRODUCTS
+                    </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                          <li><a class="dropdown-item" href="EUniform211b/cardboy.html">Shirts</a></li>
+                          <li><a class="dropdown-item" href="EUniform211b/pant.html">Pants</a></li>
+                          <li><a class="dropdown-item" href="EUniform211b/skirt.html">Skirts</a></li>
+                          <li><a class="dropdown-item" href="EUniform211b/card.html">Frocks</a></li>
+                          <li><a class="dropdown-item" href="EUniform211b/pt-shirt.html">P.T. T-Shirts</a></li>
+                          <li><a class="dropdown-item" href="EUniform211b/pt-shorts.html">P.T. Shorts</a></li>
+                          <li><a class="dropdown-item" href="EUniform211b/pttrackpant.html">P.T. Track Pants</a></li>
+                          <li><a class="dropdown-item" href="EUniform211b/belt.html">Belts</a></li>
+                          <li><a class="dropdown-item" href="EUniform211b/ties.html">Ties</a></li>
+                          <li><a class="dropdown-item" href="EUniform211b/logos.html">Logos</a></li>
+                          <li><a class="dropdown-item" href="EUniform211b/socks.html">Socks</a></li>
+                          <li><a class="dropdown-item" href="EUniform211b/shoes.html">Shoes</a></li>
+                        </ul>
+                    </div>
+                </li>
+              </li>
+              <li class="nav-item px-2 py-2 border-0">
+                <a href="contact-us.html" class="nav-link text-uppercase">Contact Us</a>
+              </li>
+              <li class="nav-item px-2 py-2">
+                <!-- <a href="#Specials" class="nav-link text-uppercase">Schools</a> -->
+                <div class="dropdown">
+                  <button class="btn school-wala-dropdown" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      SERVICES
+                  </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="index.html#why_us">Why A-1 Uniforms ?</a></li>
+                        <li><a class="dropdown-item" href="index.html#product-guarantee">Product Safety <br> & Guarantee</a></li>
+                        <li><a class="dropdown-item" href="faqs.html">FAQ's</a></li>
+                        <li><a class="dropdown-item" href="galeery.html">Gallery</a></li>
+                        <li><a class="dropdown-item" href="uniform-sizes.html">Uniforms Measurement <br> And Sizes</a></li>
+                        <li><a class="dropdown-item" href="aboutus.html#customer-reviews">Customer Reveiws</a></li>
+                        <li><a class="dropdown-item" href="index.html#counter">Our Performance</a></li>
+                        <li><a class="dropdown-item" href="index.html#our-products">School Partners</a></li>
+                      </ul>
+                  </div>
+              </li>
+              <!-- <li class="nav-item px-2 py-2 border-0">
+                <span class="position-absolute top-0 start-80 translate-middle badge label">2</span>
+                <a href="#why_us" class="nav-link text-uppercase">Discounts</a>
+              </li> -->
+              <button class="btn position-relative">
+                <a href="discounts.html" class="nav-link text-uppercase active" style="margin-top: -7px;">Discounts</a>
+                <span class="position-absolute top-0 start-100 translate-middle badge" id="discount">NEW</span>
+              </button>
+              <li class="nav-item px-2 py-2">
+                <a href="feedBack.html" class="nav-link text-uppercase">Feedback</a>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </nav>
+  </section>
+  <!-- navbar ends -->
+
+
+    <br><br>
+
+    <!-- landing pae starts -->
+    <div class="container-body">
+        <div class="wrapper-discount">
+            <div class="">
+                <h1 class="title">Enjoy <span>75% Discounts </span> On New Academic Year Before</h1>
+                <div class="countdown-container">
+                    <div>
+                        <p id="days" class="big-text">0</p>
+                        <span class="time-period">Days</span>
+                    </div>
+
+                    <div>
+                        <p id="hours" class="big-text">0</p>
+                        <span class="time-period">Hours</span>
+                    </div>
+
+                    <div>
+                        <p id="min" class="big-text">0</p>
+                        <span class="time-period">Min</span>
+                    </div>
+
+                    <div>
+                        <p id="sec" class="big-text">0</p>
+                        <span class="time-period">Sec</span>
+                    </div>
+                </div>
+                <center><a href="search-uniform.html" class="btn buy-now"><i class="fa fa-shopping-cart"></i> | Buy Now</a>
+                </center>
+            </div>
+        </div>
+
+    </div>
+    <!-- landing page ends -->
+
+
+    <!-- lucky draw poster starts -->
+    <h3 class="lucky-draw-heading-sm">Shop @ A1 Uniforms <p class="heading-wala-and">&</p>
+    </h3>
+    <h1 class="lucky-draw-heading-bg">Get A Chance To Enter In <br> Lucky Draw</h1>
+    <center><div class="sm-line-lucky-draw"></div></center>
+    <!-- image poster -->
+    <div class="container-fluid">
+        <center><img class="lucky-draw-img img-fluid" src="images/discounts-top1.png" alt=""></center>
+    </div>
+    <!-- lucky draw poster ends -->
+<!-- charity starts -->
+<div class="humanity-love">
+    
+    <p class="humaity-love-text">FOR THE LOVE OF HUMANITY</p>
+    <center><div class="sm-line-humanity"></div></center>
+</div>
+<br><br>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 col-sm-12">
+            <img class="img-fluid" src="images/discounts-charity.png" alt="">
+        </div>
+        <div class="col-lg-6 col-sm-12">
+            <h3 class="charity-heading">PHILANTHROPY</h3>
+            <div class="sm-line-charity"></div>
+            <p class="charity-para">For over 5 years A1 School Uniforms has been building stronger communities nationwide.  Not only do we participate in philanthropic and volunteer events and organizations, we encourage our employees to do the same. Additional time, money and energy is directed to smaller and larger non-profit organizations.  We are honored and happy to contribute.  We also have a deep love for our global community of peers and partners, and we actively contribute to many worthwhile causes including No Kid Hungry, various cancer, heart, special needs and veteran organizations, environmental and wildlife agencies, and SPCA. Just to name a few.</p>    
+        </div>
+    </div>
+</div>
+
+<!-- charity ends -->
+
+<!-- black friday starts -->
+<div class="black-friday container-fluid">
+</div>
+<!-- black friday ends -->
+
+<!-- holiday sale starts -->
+<div class="container holiday-sale">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-sm-12">
+                <h3 class="holiday-heading">Big Winter <br> Sale</h3>
+                <!-- <div class="sm-line-charity"></div> -->
+                <p class="holiday-para">
+                    As the December is the best time to shop for clothes. Retailers will offer discounts before the holidays, but these will drop even more the day after Christmas which can be a great way to get started early on other gift ideas for the rest of the year. Plan ahead for birthdays.
+                </p>    
+            </div>
+
+            <div class="col-lg-6 col-sm-12 float-end">
+                <center>
+                    <img class="img-fluid holiday-img" src="images/discounts-free-shipping.png" alt="">
+                </center>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<!-- holiday sale ends -->
+
+
+
+
+
+ 
+  <!-- footer starts -->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col">
+      <img src="images/main-logo.png" alt="" height="55px" style="border-radius: 10px; margin-top: -30px; margin-bottom: 20px;">
+      <h4>About Us</h4>
+        <ul>
+          <li style="color: rgba(255, 255, 255, 0.863); padding: 0px 10px;">A-1 uniforms was founded in 2016 and since then we have been one of the leading Uniform Manufacturers in the country. We supply many schools in country and give them the best uniforms. We supply affordable school uniforms for girls and boys.</li>
+          <!-- <li><a href="#">our services</a></li> -->
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="EUniform211b/cardboy.html"> Shirts</a></li>
+          <li><a href="EUniform211b/pant.html">Pants</a></li>
+          <li><a href="EUniform211b/skirt.html">Skirts</a></li>
+          <li><a href="EUniform211b/card.html">Frocks</a></li>
+          <li><a href="EUniform211b/pt-shirt.html">P.T. Wear</a></li>
+          <li><a href="EUniform211b/belt.html">Belts</a></li>
+          <li><a href="EUniform211b/ties.html">Ties</a></li>
+          <li><a href="EUniform211b/logos.html">Logos</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+          <li><a href="faqs.html">FAQ's</a></li>
+          <li><a href="uniform-sizes.html">Sizing & Measurement</a></li>
+          <li><a href="galeery.html">Gallery</a></li>
+          <li><a href="feedBack.html">Feedback</a></li>
+          <li><a href="loginform.html">My Account</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>follow us</h4>
+        <div class="wrapper">
+          <div class="icon facebook">
+             <div class="tooltip">
+                Facebook
+             </div>
+             <span><a style="color: white ;" href="https://www.facebook.com/"><i class="fa fa-facebook-f"></i></a></span>
+          </div>
+          <div class="icon twitter">
+             <div class="tooltip">
+                Twitter
+             </div>
+             <span><a style="color: white ;" href="https://twitter.com/?lang=en"><i class="fa fa-twitter"></i></a></span>
+          </div>
+          <div class="icon instagram">
+             <div class="tooltip">
+                Instagram
+             </div>
+             <span><a style="color: white ;" href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram"></i></a></span>
+          </div>
+          <div class="icon Whatsapp">
+             <div class="tooltip">
+                Whatsapp
+             </div>
+             <span><a style="color: white ;" href="https://www.whatsapp.com/"><i class="fa fa-whatsapp"></i></a></span>
+          </div>
+          <div class="icon youtube">
+             <div class="tooltip">
+                YouTube
+             </div>
+             <span><a style="color: white ;" href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a></span>
+          </div>
+
+        </div>
+        <div class="download-btns">
+          <h4 class="download-btns-heading">Download Our App</h4>
+          <div class="download-btns-img">
+            <a href="https://www.apple.com/app-store/"><img src="images/download-btns-imgs/apple-store.png" alt="" height="30px"></a>
+            <a href="https://play.google.com/store/apps/?hl=en&gl=US"><img src="images/download-btns-imgs/play-store.png" alt="" height="30px"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr style="color: white;">
+    <p class="copyright">Copyright &copy; 2022 <span style="color: orangered; cursor: pointer;font-size: 20px;font-family: 'Playfair Display', serif;">A1 Uniforms</span>. All Rights Reserved</p>
+    <marquee behavior="" direction="" style="color: yellow;" scrollamount="10">This Website is Created By "<span style="color: orangered; cursor: pointer;font-weight: bold;">Muhammad Sufyan</span>" , "<span style="color: orangered; cursor: pointer;font-weight: bold;">Muhammad Rayyan</span>" , "<span style="color: orangered; cursor: pointer;font-weight: bold;">Iqra</span>" , "<span style="color: orangered; cursor: pointer;font-weight: bold;">Saleha</span>" & "<span style="color: orangered; cursor: pointer;font-weight: bold;">Mohsin</span>"... </marquee>
+  </div>
+</footer>
+
+<!-- footer ends -->
+
+
+<!-- scroll top top button starts -->
+<style>
+  .to-top{
+    background-color: orangered;
+    position: fixed;
+    bottom: 0px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #1f1f1f;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+  }
+  .to-top:hover{
+    background-color: black;
+  }
+  .to-top.active{
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+  }
+</style>
+<a href="#" class="to-top">
+  <i class="fa fa-chevron-up"></i>
+</a>
+
+<script>
+  const toTop = document.querySelector(".to-top");
+  window.addEventListener("scroll", () => {
+    if(window.pageYOffset > 100) {
+      toTop.classList.add("active");
+    }
+    else{
+      toTop.classList.remove("active");
+    }
+  })
+</script>
+<!-- scroll top top button ends -->
+
+
+    <!-- =============
+java script code
+=================== -->
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script>
+        let daysItem = document.querySelector("#days");
+        let hoursItem = document.querySelector("#hours");
+        let minItem = document.querySelector("#min");
+        let secItem = document.querySelector("#sec");
+
+
+        let countDown = () => {
+            let futureDate = new Date("30 April 2022");
+            let currentDate = new Date();
+            let myDate = futureDate - currentDate;
+            // console.log(myDate);
+
+            let days = Math.floor(myDate / 1000 / 60 / 60 / 24);
+
+            let hours = Math.floor(myDate / 1000 / 60 / 60) % 24;
+
+            let min = Math.floor(myDate / 1000 / 60) % 60;
+
+            let sec = Math.floor(myDate / 1000) % 60;
+
+            daysItem.innerHTML = days;
+            hoursItem.innerHTML = hours;
+            minItem.innerHTML = min;
+            secItem.innerHTML = sec;
+        }
+        countDown()
+
+        setInterval(countDown, 1000)
+    </script>
+
+    <!-- login js -->
+<script>
+    function login()
+    {
+        window.location="loginform.html"
+    }
+  </script>
+  
+  <!-- Cart JS -->
+  <script>
+    function cart()
+    {
+        window.location="cart.html"
+    }
+  </script>
+  <!-- search js -->
+<script>
+  function search() {
+    window.location="search-uniform.html"
+  }
+</script>
+</body>
+
+</html>

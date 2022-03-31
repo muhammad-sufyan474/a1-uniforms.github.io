@@ -1,0 +1,3193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Uniforms | A1 Uniforms </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@600&family=Libre+Baskerville:ital,wght@0,700;1,400&family=Lobster&family=Mea+Culpa&family=Play&family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- fav icon -->
+  <link rel="icon" type="images/main-logo-fav.png" href="images/main-logo-fav.png">
+  <!-- footer css -->
+  <link rel="stylesheet" href="css/style-footer.css">
+  <!-- Social media css link -->
+  <link rel="stylesheet" href="css/social-media.css">
+
+  <!-- magnify css links -->
+  <title>Shirts | Products | A1 Uniforms</title>
+  <link rel="stylesheet" href="css/magnify.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+          integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/card.css">
+
+
+
+    <!-- search suggestions -->
+    <link rel="stylesheet" href="jquery-ui-1.13.1.custom/jquery-ui.css">
+    <link rel="stylesheet" href="jquery-ui-1.13.1.custom/jquery-ui.min.css">
+    <link rel="stylesheet" href="jquery-ui-1.13.1.custom/jquery-ui.structure.css">
+    <link rel="stylesheet" href="jquery-ui-1.13.1.custom/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="jquery-ui-1.13.1.custom/jquery-ui.theme.css">
+    <link rel="stylesheet" href="jquery-ui-1.13.1.custom/jquery-ui.theme.min.css">
+</head>
+<body>
+  <style>
+    input{
+      border: 1px solid black !important;
+      outline: 0px orangered !important;
+      box-shadow: none;
+    }
+    .search-heading{
+    padding-top: 0px;
+    text-align: center;
+    color: navy;
+    -webkit-text-stroke: 1px navy;
+    font-size: 55px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bolder;
+}
+.sm-heading{
+  padding-top: 20px;
+    text-align: center;
+    color: orangered;
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
+.sm-line-search{
+    height: 5px;
+    width: 10rem;
+    border-radius: 10px;
+    background-color: #e9e902
+}
+
+  </style>
+
+
+  <!-- nav bar starts -->
+  <section id="home">
+    <nav class="navbar navbar-expand-lg navbar-light bgwhite py-4 fixed-top">
+      <div class="container">
+        <a href="index.html" class="order-lg-0">
+          <!-- logo  -->
+          <!-- <img src="images/logo.jpg" alt="" height="75px" width="130px"> -->
+          <!-- <img src="images/unnamed-155x210 ....png" height="75px" alt=""> -->
+          <img src="images/main-logo.png" alt="" height="75px">
+        </a>
+          <div class="order-lg-2 nav-btns" style="margin-right: -10px;">
+            <button class="btn position-relative">
+              <i class="fa fa-shopping-cart" onclick="cart()"></i>
+              <span class="position-absolute top-0 start-100 translate-middle badge label">2</span>
+            </button>
+            <button class="btn position-relative">
+              <i class="fa fa-search" onclick="search()" style=" color: orangered !important;font-weight: bolder; border-radius: 4px; padding: 6px; transition: .3s;border: 1px solid yellow;"></i>
+              <!-- <span class="position-absolute top-0 start-100 translate-middle badge label">2</span> -->
+            </button>
+            <button class="btn position-relative">
+              <i class="fa fa-user" onclick="login()"></i>
+            </button>
+
+          </div>
+          <button class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span>
+            <i class="fa fa-bars" id="hamberg-icon"></i>
+          </span>
+          </button>
+  
+          <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+            <ul class="navbar-nav mx-auto text-center">
+              <li class="nav-item px-2 py-2">
+                <a href="index.html" class="nav-link text-uppercase">Home</a>
+              </li>
+              <li class="nav-item px-2 py-2">
+                <a href="aboutus.html" class="nav-link text-uppercase">About Us</a>
+              </li>
+              <li class="nav-item px-2 py-2 border-0">
+                <!-- <a href="#why_us" class="nav-link text-uppercase">Products</a> -->
+                <li class="nav-item px-2 py-2">
+                  <div class="dropdown">
+                    <button class="btn school-wala-dropdown" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                        PRODUCTS
+                    </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                          <li><a class="dropdown-item" href="EUniform211b/cardboy.html">Shirts</a></li>
+                          <li><a class="dropdown-item" href="EUniform211b/pant.html">Pants</a></li>
+                          <li><a class="dropdown-item" href="EUniform211b/skirt.html">Skirts</a></li>
+                          <li><a class="dropdown-item" href="EUniform211b/card.html">Frocks</a></li>
+                          <li><a class="dropdown-item" href="EUniform211b/pt-shirt.html">P.T. T-Shirts</a></li>
+                          <li><a class="dropdown-item" href="EUniform211b/pt-shorts.html">P.T. Shorts</a></li>
+                          <li><a class="dropdown-item" href="EUniform211b/pttrackpant.html">P.T. Track Pants</a></li>
+                          <li><a class="dropdown-item" href="EUniform211b/belt.html">Belts</a></li>
+                          <li><a class="dropdown-item" href="EUniform211b/ties.html">Ties</a></li>
+                          <li><a class="dropdown-item" href="EUniform211b/logos.html">Logos</a></li>
+                          <li><a class="dropdown-item" href="EUniform211b/socks.html">Socks</a></li>
+                          <li><a class="dropdown-item" href="EUniform211b/shoes.html">Shoes</a></li>
+                        </ul>
+                    </div>
+                </li>
+              </li>
+              <li class="nav-item px-2 py-2 border-0">
+                <a href="contact-us.html" class="nav-link text-uppercase">Contact Us</a>
+              </li>
+              <li class="nav-item px-2 py-2">
+                <!-- <a href="#Specials" class="nav-link text-uppercase">Schools</a> -->
+                <div class="dropdown">
+                  <button class="btn school-wala-dropdown" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      SERVICES
+                  </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="index.html#why_us">Why A-1 Uniforms ?</a></li>
+                        <li><a class="dropdown-item" href="index.html#product-guarantee">Product Safety <br> & Guarantee</a></li>
+                        <li><a class="dropdown-item" href="faqs.html">FAQ's</a></li>
+                        <li><a class="dropdown-item" href="galeery.html">Gallery</a></li>
+                        <li><a class="dropdown-item" href="uniform-sizes.html">Uniforms Measurement <br> And Sizes</a></li>
+                        <li><a class="dropdown-item" href="aboutus.html#customer-reviews">Customer Reveiws</a></li>
+                        <li><a class="dropdown-item" href="index.html#counter">Our Performance</a></li>
+                        <li><a class="dropdown-item" href="index.html#our-products">School Partners</a></li>
+                      </ul>
+                  </div>
+              </li>
+              <!-- <li class="nav-item px-2 py-2 border-0">
+                <span class="position-absolute top-0 start-80 translate-middle badge label">2</span>
+                <a href="#why_us" class="nav-link text-uppercase">Discounts</a>
+              </li> -->
+              <button class="btn position-relative">
+                <a href="discounts.html" class="nav-link text-uppercase" style="margin-top: -1px;">Discounts</a>
+                <span class="position-absolute top-0 start-100 translate-middle badge" id="discount">NEW</span>
+              </button>
+              <li class="nav-item px-2 py-2">
+                <a href="feedBack.html" class="nav-link text-uppercase">Feedback</a>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </nav>
+  </section>
+  <!-- navbar ends -->
+    
+<br><br><br><br><br><br>
+    <!-- image filters starts -->
+    <section id="gallery">
+        <h1 class="main-heading search-heading">
+          Our Products
+        </h1>
+        <center><div class="sm-line-search"></div></center>
+        <h4 class="sm-heading">You Can Search Products By <br> Name, Color & Category </h4>
+      <div class="container p-5 mt-2">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-6">
+            <div class="input-group">
+              <input type="text" placeholder="Search Products Here..." class="form-control input" id="inp">
+              <div class="input-group-append">
+                <button type="button" class="btn" style="outline: none; background-color: navy; color: yellow;" id="search">Search</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row p-5" id="panel">
+          <h1 class="display-3 text-center text-muted" id="not_find_any_thing"></h1>
+<!-- searching ends -->
+
+<!-- pics starts -->
+ <!-- main contect starts -->
+
+
+                           <!-- shirts wala kaam starts -->
+
+<div style="padding: 30px 0px 70px 0px;" class="body-products">
+
+  <div class="container-img content-holder">
+          <div id="boys" class="card">
+                  <div class="imgBx">
+                          <a href="EUniform211b/cardlink.html">
+                                <img src="EUniform211b/IMAGES/b1.jpg" alt=""></a>
+                          <ul class="action">
+                                  <li>
+                                          <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                                          <span>Add to Cart</span>
+                                  </li>
+                          </ul>
+                  </div>
+                  <div class="content">
+                          <div class="productName">
+                                  <h3 class="card-title">White Shirt</h3>
+                          </div>
+                          <div class="price_rating">
+                                  <h2>Rs. 650</h2>
+                                  <div class="rating">
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa  grey fa-star" aria-hidden="true"></i>
+
+                                  </div>
+                          </div>
+                  </div>
+          </div>
+          <div class="card">
+                  <div class="imgBx">
+                          <a href="EUniform211b/link1.html">
+                                <img src="EUniform211b/IMAGES/b15.jpg" alt=""></a>
+
+                          <ul class="action">
+                                  <li>
+                                          <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                                          <span>Add to Cart</span>
+                                  </li>
+                          </ul>
+                  </div>
+                  <div class="content">
+                          <div class="productName">
+                                  <h3 class="card-title">Blue Shirt</h3>
+                          </div>
+                          <div class="price_rating">
+                                  <h2>Rs. 650</h2>
+                                  <div class="rating">
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star grey" aria-hidden="true"></i>
+                                          <i class="fa fa-star grey" aria-hidden="true"></i>
+
+                                  </div>
+                          </div>
+                  </div>
+          </div>
+          <div class="card">
+                  <div class="imgBx">
+                          <a href="EUniform211b/link2.html">
+                                  <img src="EUniform211b/IMAGES/b13.jpg"></a>
+
+                          <ul class="action">
+                                  <li>
+                                          <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                                          <span>Add to Cart</span>
+                                  </li>
+                          </ul>
+                  </div>
+                  <div class="content">
+                          <div class="productName">
+                                  <h3 class="card-title"
+                                          style="text-align: center; padding: 10px; font-weight: bolder; font-style: italic;">
+                                          Green Striped Shirt</h3>
+                          </div>
+                          <div class="price_rating">
+                                  <h2>Rs. 650</h2>
+                                  <div class="rating">
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+
+                                  </div>
+                          </div>
+                  </div>
+          </div>
+
+          <div class="card">
+                  <div class="imgBx">
+                          <a href="EUniform211b/link3.html">
+                                  <img src="EUniform211b/IMAGES/b3.jpg"></a>
+                          <ul class="action">
+                                  <li>
+                                          <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                                          <span>Add to Cart</span>
+                                  </li>
+                          </ul>
+                  </div>
+                  <div class="content">
+                          <div class="productName">
+                                  <h3 class="card-title"
+                                          style="text-align: center; padding: 10px; font-weight: bolder; font-style: italic;">
+                                          Red Check Shirt</h3>
+                          </div>
+                          <div class="price_rating">
+                                  <h2>Rs.650</h2>
+                                  <div class="rating">
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star grey" aria-hidden="true"></i>
+
+                                  </div>
+                          </div>
+                  </div>
+          </div>
+
+
+          <div class="card">
+                  <div class="imgBx">
+                          <a href="EUniform211b/link8.html">
+                                  <img src="EUniform211b/IMAGES/b8.jpg"></a>
+                          <ul class="action">
+                                  <li>
+                                          <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                                          <span>Add to Cart</span>
+                                  </li>
+                          </ul>
+                  </div>
+                  <div class="content">
+                          <div class="productName">
+                                  <h3 class="card-title"
+                                          style="text-align: center; padding: 10px; font-weight: bolder; font-style: italic;">
+                                          Yellow Shirt</h3>
+
+                          </div>
+                          <div class="price_rating">
+                                  <h2>Rs. 650</h2>
+                                  <div class="rating">
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+
+                                  </div>
+                          </div>
+                  </div>
+          </div>
+          <div class="card">
+                  <div class="imgBx">
+                          <a href="EUniform211b/link9.html">
+                                  <img src="EUniform211b/IMAGES/b9.jpg"></a>
+                          <ul class="action">
+                                  <li>
+                                          <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                                          <span>Add to Cart</span>
+                                  </li>
+                          </ul>
+                  </div>
+                  <div class="content">
+                          <div class="productName">
+                                  <h3 class="card-title"
+                                          style="text-align: center; padding: 10px; font-weight: bolder; font-style: italic;">
+                                          Red Check Shirt</h3>
+
+                          </div>
+                          <div class="price_rating">
+                                  <h2>Rs. 650</h2>
+                                  <div class="rating">
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+
+                                  </div>
+                          </div>
+                  </div>
+          </div>
+          <div class="card">
+                  <div class="imgBx">
+                          <a href="EUniform211b/link10.html">
+                                  <img src="EUniform211b/IMAGES/b11.jpg"></a>
+                          <ul class="action">
+                                  <li>
+                                          <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                                          <span>Add to Cart</span>
+                                  </li>
+                          </ul>
+                  </div>
+                  <div class="content">
+                          <div class="productName">
+                                  <h3 class="card-title"
+                                          style="text-align: center; padding: 10px; font-weight: bolder; font-style: italic;">
+                                          Light Blue Shirt</h3>
+
+                          </div>
+                          <div class="price_rating">
+                                  <h2>Rs. 650</h2>
+                                  <div class="rating">
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+
+                                  </div>
+                          </div>
+                  </div>
+          </div>
+          <div class="card">
+                  <div class="imgBx">
+                          <a href="EUniform211b/link12.html">
+                                  <img src="EUniform211b/IMAGES/b12.jpg"></a>
+                          <ul class="action">
+                                  <li>
+                                          <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                                          <span>Add to Cart</span>
+                                  </li>
+                          </ul>
+                  </div>
+                  <div class="content">
+                          <div class="productName">
+                                  <h3 class="card-title"
+                                          style="text-align: center; padding: 10px; font-weight: bolder; font-style: italic;">
+                                          Gray Shirt</h3>
+
+                          </div>
+                          <div class="price_rating">
+                                  <h2>Rs. 650</h2>
+                                  <div class="rating">
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+
+                                  </div>
+                          </div>
+                  </div>
+          </div>
+<!-- shirts wala kaam ends -->
+
+
+<!-- pants wala kaam starts -->
+          <div class="card">
+            <div class="imgBx">
+                <a href="EUniform211b/pant1.html"><img src="EUniform211b/IMAGES/pant1.png"></a>
+                <ul class="action">
+                    <li>
+                        <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                        <span>Add to Cart</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="productName">
+                    <b>
+                        <h3 class="card-title">Blue Pant</h3>
+                    </b>
+                </div>
+                <div class="price_rating">
+                    <h2>Rs. 1150</h2>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa  grey fa-star" aria-hidden="true"></i>
+  
+                    </div>
+                </div>
+            </div>
+        </div>
+      <div class="card">
+        <div class="imgBx">
+            <a href="EUniform211b/pant3.html"> <img src="EUniform211b/IMAGES/pant3.jpg"></a>
+
+            <ul class="action">
+                <li>
+                    <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                    <span>Add to Cart</span>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="productName">
+                <h3 class="card-title">Light Gray Pant</h3>
+            </div>
+            <div class="price_rating">
+                <h2>Rs. 1150</h2>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="imgBx">
+            <a href="EUniform211b/pant8.html"> <img src="EUniform211b/IMAGES/pant8.jpg"></a>
+            <ul class="action">
+                <li>
+                    <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                    <span>Add to Cart</span>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="productName">
+                <h3 class="card-title">Dark Gray Pant</h3>
+            </div>
+            <div class="price_rating">
+                <h2>Rs. 1150</h2>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star grey" aria-hidden="true"></i>
+                    <i class="fa fa-star grey" aria-hidden="true"></i>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="imgBx">
+            <a href="EUniform211b/pant5.html"> <img src="EUniform211b/IMAGES/pant5.jpg"></a>
+            <ul class="action">
+                <li>
+                    <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                    <span>Add to Cart</span>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="productName">
+                <h3 class="card-title">Brown Pant</h3>
+            </div>
+            <div class="price_rating">
+                <h2>Rs. 1150</h2>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star grey" aria-hidden="true"></i>
+                    <i class="fa fa-star grey" aria-hidden="true"></i>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="imgBx">
+            <a href="EUniform211b/pant2.html"> <img src="EUniform211b/IMAGES/pant2.jpg"></a>
+            <ul class="action">
+                <li>
+                    <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                    <span>Add to Cart</span>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="productName">
+                <h3 class="card-title">Navy Blue Pant</h3>
+            </div>
+            <div class="price_rating">
+                <h2>Rs. 1150</h2>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star grey" aria-hidden="true"></i>
+                    <i class="fa fa-star grey" aria-hidden="true"></i>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="imgBx">
+            <a href="EUniform211b/pant4.html"> <img src="EUniform211b/IMAGES/pant4.jpeg"></a>
+            <ul class="action">
+                <li>
+                    <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                    <span>Add to Cart</span>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="productName">
+                <h3 class="card-title">Gray Pant</h3>
+            </div>
+            <div class="price_rating">
+                <h2>Rs. 1150</h2>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star grey" aria-hidden="true"></i>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="imgBx">
+            <a href="EUniform211b/pant6.html"> <img src="EUniform211b/IMAGES/pant6.jpg"></a>
+            <ul class="action">
+                <li>
+                    <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                    <span>Add to Cart</span>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="productName">
+                <h3 class="card-title">Black Pant</h3>
+            </div>
+            <div class="price_rating">
+                <h2>Rs. 1150</h2>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star grey" aria-hidden="true"></i>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="imgBx">
+            <a href="EUniform211b/pant12.html"><img src="EUniform211b/IMAGES/pant12.webp"></a>
+            <ul class="action">
+                <li>
+                    <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                    <span>Add to Cart</span>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="productName">
+                <h3 class="card-title">Pencil Gray Pant</h3>
+
+            </div>
+            <div class="price_rating">
+                <h2>Rs. 1150</h2>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- pants wala kaam ends -->
+     <!-- Skirts wala kamm starts -->
+     <div class="card">
+      <div class="imgBx">
+              <a href="EUniform211b/skirt1.html"><img src="EUniform211b/IMAGES/skirt1.jpg"></a>
+              <ul class="action">
+                      <li>
+                              <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                              <span>Add to Cart</span>
+                      </li>
+              </ul>
+      </div>
+      <div class="content">
+              <div class="productName">
+                      <h3 class="card-title" style="text-align: center; padding: 10px; font-weight: bolder; font-style: italic;">Black Skirt</h3>
+              </div>
+              <div class="price_rating">
+                      <h2>Rs. 700</h2>
+                      <div class="rating">
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa  grey fa-star" aria-hidden="true"></i>
+
+                      </div>
+              </div>
+      </div>
+</div>
+<div class="card">
+      <div class="imgBx">
+              <a href="EUniform211b/skirt2.html"><img src="EUniform211b/IMAGES/skirt2.png"></a>
+              <ul class="action">
+                      <li>
+                              <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                              <span>Add to Cart</span>
+                      </li>
+              </ul>
+      </div>
+      <div class="content">
+              <div class="productName">
+                      <h3 class="card-title" style="text-align: center; padding: 10px; font-weight: bolder; font-style: italic;">Red Check Skirt</h3>
+              </div>
+              <div class="price_rating">
+                      <h2>Rs. 700</h2>
+                      <div class="rating">
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star grey" aria-hidden="true"></i>
+                              <i class="fa fa-star grey" aria-hidden="true"></i>
+
+                      </div>
+              </div>
+      </div>
+</div>
+<div class="card">
+      <div class="imgBx">
+              <a href="EUniform211b/skirt3.html"><img src="EUniform211b/IMAGES/skirt3.webp"></a>
+
+              <ul class="action">
+                      <li>
+                              <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                              <span>Add to Cart</span>
+                      </li>
+              </ul>
+      </div>
+      <div class="content">
+              <div class="productName">
+                      <h3 class="card-title" style="text-align: center; padding: 10px; font-weight: bolder; font-style: italic;">Red Stripped Skirt</h3>
+              </div>
+              <div class="price_rating">
+                      <h2>Rs. 700</h2>
+                      <div class="rating">
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+
+                      </div>
+              </div>
+      </div>
+</div>
+
+<div id="girls" class="card">
+      <div class="imgBx">
+              <a href="EUniform211b/skirt4.html"> <img src="EUniform211b/IMAGES/skirt4.png"></a>
+              <ul class="action">
+                      <li>
+                              <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                              <span>Add to Cart</span>
+                      </li>
+              </ul>
+      </div>
+      <div class="content">
+              <div class="productName">
+                      <h3 class="card-title" style="text-align: center; padding: 10px; font-weight: bolder; font-style: italic;">Blue Check Skirt</h3>
+              </div>
+              <div class="price_rating">
+                      <h2>Rs. 700</h2>
+                      <div class="rating">
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star grey" aria-hidden="true"></i>
+
+                      </div>
+              </div>
+      </div>
+</div>
+<div class="card">
+      <div class="imgBx">
+              <a href="EUniform211b/skirt7.html"><img src="EUniform211b/IMAGES/skirt7.jpg"></a>
+              <ul class="action">
+                      <li>
+                              <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                              <span>Add to Cart</span>
+                      </li>
+              </ul>
+      </div>
+      <div class="content">
+              <div class="productName">
+                      <h3 class="card-title" style="text-align: center; padding: 10px; font-weight: bolder; font-style: italic;">White Skirt</h3>
+              </div>
+              <div class="price_rating">
+                      <h2>Rs. 700</h2>
+                      <div class="rating">
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star grey" aria-hidden="true"></i>
+
+                      </div>
+              </div>
+      </div>
+</div>
+<div class="card">
+      <div class="imgBx">
+              <a href="EUniform211b/skirt8.html"><img src="EUniform211b/IMAGES/skirt8.jpg"></a>
+              <ul class="action">
+                      <li>
+                              <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                              <span>Add to Cart</span>
+                      </li>
+              </ul>
+      </div>
+      <div class="content">
+              <div class="productName">
+                      <h3 class="card-title" style="text-align: center; padding: 10px; font-weight: bolder; font-style: italic;">Brown Skirt</h3>
+              </div>
+              <div class="price_rating">
+                      <h2>Rs. 700</h2>
+                      <div class="rating">
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star grey" aria-hidden="true"></i>
+                              <i class="fa fa-star grey" aria-hidden="true"></i>
+
+                      </div>
+              </div>
+      </div>
+</div>
+
+
+<div class="card">
+      <div class="imgBx">
+              <a href="EUniform211b/skirt9.html"> <img src="EUniform211b/IMAGES/skirt9.jpeg"></a>
+              <ul class="action">
+                      <li>
+                              <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                              <span>Add to Cart</span>
+                      </li>
+              </ul>
+      </div>
+      <div class="content">
+              <div class="productName">
+                      <h3 class="card-title" style="text-align: center; padding: 10px; font-weight: bolder; font-style: italic;">Blue Skirt</h3>
+
+              </div>
+              <div class="price_rating">
+                      <h2>Rs. 700</h2>
+                      <div class="rating">
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+
+                      </div>
+              </div>
+      </div>
+</div>
+<div class="card">
+      <div class="imgBx">
+              <a href="EUniform211b/skirt12.html"> <img src="EUniform211b/IMAGES/skirt12.jpeg"></a>
+              <ul class="action">
+                      <li>
+                              <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                              <span>Add to Cart</span>
+                      </li>
+              </ul>
+      </div>
+      <div class="content">
+              <div class="productName">
+                      <h3 class="card-title" style="text-align: center; padding: 10px; font-weight: bolder; font-style: italic;">Black & White Skirt</h3>
+
+              </div>
+              <div class="price_rating">
+                      <h2>Rs. 700</h2>
+                      <div class="rating">
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+
+                      </div>
+              </div>
+      </div>
+</div>
+     <!-- Skirts wala kamm ends -->
+
+     <!-- Forcks starts -->
+     <div class="card">
+      <div class="imgBx">
+          <a href="EUniform211b/card1.html"><img src="EUniform211b/IMAGES/shirt1.jpg"></a>
+          <ul class="action">
+              <li>
+                  <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                  <span>Add to Cart</span>
+              </li>
+          </ul>
+      </div>
+      <div class="content">
+          <div class="productName">
+              <b>
+                  <h3 class="card-title">Navy Blue Frock</h3>
+              </b>
+          </div>
+          <div class="price_rating">
+              <h2>Rs. 850</h2>
+              <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa  grey fa-star" aria-hidden="true"></i>
+
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="card">
+      <div class="imgBx">
+          <a href="EUniform211b/card2.html"><img src="EUniform211b/IMAGES/shirt2.jpg"></a>
+          <ul class="action">
+              <li>
+                  <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                  <span>Add to Cart</span>
+              </li>
+          </ul>
+      </div>
+      <div class="content">
+          <div class="productName">
+              <h3 class="card-title">Red Check Frock</h3>
+          </div>
+          <div class="price_rating">
+              <h2>Rs. 850</h2>
+              <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star grey" aria-hidden="true"></i>
+                  <i class="fa fa-star grey" aria-hidden="true"></i>
+
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="card">
+      <div class="imgBx">
+          <a href="EUniform211b/card3.html"> <img src="EUniform211b/IMAGES/shirt3.jpg"></a>
+
+          <ul class="action">
+              <li>
+                  <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                  <span>Add to Cart</span>
+              </li>
+          </ul>
+      </div>
+      <div class="content">
+          <div class="productName">
+              <h3 class="card-title">Blue Red Frock</h3>
+          </div>
+          <div class="price_rating">
+              <h2>Rs. 850</h2>
+              <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="card">
+      <div class="imgBx">
+          <a href="EUniform211b/card4.html"> <img src="EUniform211b/IMAGES/shirt4.jpg"></a>
+          <ul class="action">
+              <li>
+                  <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                  <span>Add to Cart</span>
+              </li>
+          </ul>
+      </div>
+      <div class="content">
+          <div class="productName">
+              <h3 class="card-title">Gray Blue Frock</h3>
+          </div>
+          <div class="price_rating">
+              <h2>Rs. 850</h2>
+              <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star grey" aria-hidden="true"></i>
+
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="card">
+      <div class="imgBx">
+          <a href="EUniform211b/card5.html"> <img src="EUniform211b/IMAGES/shirt5.jpg"></a>
+          <ul class="action">
+              <li>
+                  <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                  <span>Add to Cart</span>
+              </li>
+          </ul>
+      </div>
+      <div class="content">
+          <div class="productName">
+              <h3 class="card-title">Gray Check Frock</h3>
+          </div>
+          <div class="price_rating">
+              <h2>Rs. 850</h2>
+              <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star grey" aria-hidden="true"></i>
+                  <i class="fa fa-star grey" aria-hidden="true"></i>
+
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="card">
+      <div class="imgBx">
+          <a href="EUniform211b/card6.html"> <img src="EUniform211b/IMAGES/shirt6.jpg"></a>
+          <ul class="action">
+              <li>
+                  <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                  <span>Add to Cart</span>
+              </li>
+          </ul>
+      </div>
+      <div class="content">
+          <div class="productName">
+              <h3 class="card-title">Blue Frock</h3>
+          </div>
+          <div class="price_rating">
+              <h2>Rs. 850</h2>
+              <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star grey" aria-hidden="true"></i>
+
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="card">
+      <div class="imgBx">
+          <a href="EUniform211b/card7.html"> <img src="EUniform211b/IMAGES/shirt7.jpg"></a>
+          <ul class="action">
+              <li>
+                  <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                  <span>Add to Cart</span>
+              </li>
+          </ul>
+      </div>
+      <div class="content">
+          <div class="productName">
+              <h3 class="card-title">Navy Blue White Frock</h3>
+          </div>
+          <div class="price_rating">
+              <h2>Rs. 850</h2>
+              <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star grey" aria-hidden="true"></i>
+
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="card">
+      <div class="imgBx">
+          <a href="EUniform211b/card8.html"> <img src="EUniform211b/IMAGES/shirt8.jpg"></a>
+          <ul class="action">
+              <li>
+                  <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                  <span>Add to Cart</span>
+              </li>
+          </ul>
+      </div>
+      <div class="content">
+          <div class="productName">
+              <h3 class="card-title">Black Blue Frock</h3>
+          </div>
+          <div class="price_rating">
+              <h2>Rs. 850</h2>
+              <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star grey" aria-hidden="true"></i>
+                  <i class="fa fa-star grey" aria-hidden="true"></i>
+
+              </div>
+          </div>
+      </div>
+  </div>
+     <!-- Forcks ends -->
+
+     <!-- pt shirts starts -->
+     <div class="card">
+      <div class="imgBx">
+          <a href="EUniform211b/pt1.html"><img src="EUniform211b/IMAGES/pt-shirt.jpg"></a>
+          <ul class="action">
+              <li>
+                  <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                  <span>Add to Cart</span>
+              </li>
+          </ul>
+      </div>
+      <div class="content">
+          <div class="productName">
+              <b>
+                  <h3 class="card-title">Green Shirt</h3>
+              </b>
+          </div>
+          <div class="price_rating">
+              <h2>Rs. 850</h2>
+              <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa  grey fa-star" aria-hidden="true"></i>
+
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="card">
+      <div class="imgBx">
+          <a href="EUniform211b/pt2.html"><img src="EUniform211b/IMAGES/pt-shirt2.jpg"></a>
+          <ul class="action">
+              <li>
+                  <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                  <span>Add to Cart</span>
+              </li>
+          </ul>
+      </div>
+      <div class="content">
+          <div class="productName">
+              <h3 class="card-title">Black Shirt</h3>
+          </div>
+          <div class="price_rating">
+              <h2>Rs. 850</h2>
+              <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star grey" aria-hidden="true"></i>
+                  <i class="fa fa-star grey" aria-hidden="true"></i>
+
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="card">
+      <div class="imgBx">
+          <a href="EUniform211b/pt3.html"> <img src="EUniform211b/IMAGES/pt-shirt3.jpg"></a>
+
+          <ul class="action">
+              <li>
+                  <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                  <span>Add to Cart</span>
+              </li>
+          </ul>
+      </div>
+      <div class="content">
+          <div class="productName">
+              <h3 class="card-title">Yellow Shirt</h3>
+          </div>
+          <div class="price_rating">
+              <h2>Rs. 850</h2>
+              <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="card">
+      <div class="imgBx">
+          <a href="EUniform211b/pt4.html"> <img src="EUniform211b/IMAGES/pt-shirt4.png"></a>
+          <ul class="action">
+              <li>
+                  <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                  <span>Add to Cart</span>
+              </li>
+          </ul>
+      </div>
+      <div class="content">
+          <div class="productName">
+              <h3 class="card-title">Red Shirt</h3>
+          </div>
+          <div class="price_rating">
+              <h2>Rs. 850</h2>
+              <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star grey" aria-hidden="true"></i>
+
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="card">
+      <div class="imgBx">
+          <a href="EUniform211b/pt5.html"> <img src="EUniform211b/IMAGES/pt-shirt5.jpg"></a>
+          <ul class="action">
+              <li>
+                  <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                  <span>Add to Cart</span>
+              </li>
+          </ul>
+      </div>
+      <div class="content">
+          <div class="productName">
+              <h3 class="card-title">Orange Shirt</h3>
+          </div>
+          <div class="price_rating">
+              <h2>Rs. 850</h2>
+              <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star grey" aria-hidden="true"></i>
+                  <i class="fa fa-star grey" aria-hidden="true"></i>
+
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="card">
+      <div class="imgBx">
+          <a href="EUniform211b/pt6.html"> <img src="EUniform211b/IMAGES/pt-shirt6.jpg"></a>
+          <ul class="action">
+              <li>
+                  <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                  <span>Add to Cart</span>
+              </li>
+          </ul>
+      </div>
+      <div class="content">
+          <div class="productName">
+              <h3 class="card-title">Blue Shirt</h3>
+          </div>
+          <div class="price_rating">
+              <h2>Rs. 850</h2>
+              <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star grey" aria-hidden="true"></i>
+
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="card">
+      <div class="imgBx">
+          <a href="EUniform211b/pt7.html"> <img src="EUniform211b/IMAGES/pt-shirt7.jpg"></a>
+          <ul class="action">
+              <li>
+                  <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                  <span>Add to Cart</span>
+              </li>
+          </ul>
+      </div>
+      <div class="content">
+          <div class="productName">
+              <h3 class="card-title">Gray Shirt</h3>
+          </div>
+          <div class="price_rating">
+              <h2>Rs. 850</h2>
+              <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star grey" aria-hidden="true"></i>
+
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="card">
+      <div class="imgBx">
+          <a href="EUniform211b/pt10.html"><img src="EUniform211b/IMAGES/pt-shirt10.jpg"></a>
+          <ul class="action">
+              <li>
+                  <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                  <span>Add to Cart</span>
+              </li>
+          </ul>
+      </div>
+      <div class="content">
+          <div class="productName">
+              <h3 class="card-title">Pink Shirt</h3>
+
+          </div>
+          <div class="price_rating">
+              <h2>Rs. 850</h2>
+              <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+
+              </div>
+          </div>
+      </div>
+  </div>
+
+     <!-- pt shirts ends -->
+
+     
+     <!-- pt shorts starts -->
+     <div class="card">
+      <div class="imgBx">
+          <a href="EUniform211b/ps1.html"><img src="EUniform211b/IMAGES/pt1.jpg"></a>
+          <ul class="action">
+              <li>
+                  <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                  <span>Add to Cart</span>
+              </li>
+          </ul>
+      </div>
+      <div class="content">
+          <div class="productName">
+              <b>
+                  <h3 class="card-title">White Short</h3>
+              </b>
+          </div>
+          <div class="price_rating">
+              <h2>Rs.600</h2>
+              <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa  grey fa-star" aria-hidden="true"></i>
+
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="card">
+      <div class="imgBx">
+          <a href="EUniform211b/ps2.html"><img src="EUniform211b/IMAGES/pt2.jpg"></a>
+          <ul class="action">
+              <li>
+                  <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                  <span>Add to Cart</span>
+              </li>
+          </ul>
+      </div>
+      <div class="content">
+          <div class="productName">
+              <h3 class="card-title">Brown Short</h3>
+          </div>
+          <div class="price_rating">
+              <h2>Rs.600</h2>
+              <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star grey" aria-hidden="true"></i>
+                  <i class="fa fa-star grey" aria-hidden="true"></i>
+
+              </div>
+          </div>
+      </div>
+  </div>
+ 
+  <div class="card">
+      <div class="imgBx">
+          <a href="EUniform211b/ps5.html"> <img src="EUniform211b/IMAGES/pt5.jpg"></a>
+          <ul class="action">
+              <li>
+                  <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                  <span>Add to Cart</span>
+              </li>
+          </ul>
+      </div>
+      <div class="content">
+          <div class="productName">
+              <h3 class="card-title">Blue Short</h3>
+          </div>
+          <div class="price_rating">
+              <h2>Rs.600</h2>
+              <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star grey" aria-hidden="true"></i>
+                  <i class="fa fa-star grey" aria-hidden="true"></i>
+
+              </div>
+          </div>
+      </div>
+  </div>
+ 
+  <div class="card">
+      <div class="imgBx">
+          <a href="EUniform211b/ps7.html"><img src="EUniform211b/IMAGES/pt7.jpg"></a>
+          <ul class="action">
+              <li>
+                  <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                  <span>Add to Cart</span>
+              </li>
+          </ul>
+      </div>
+      <div class="content">
+          <div class="productName">
+              <h3 class="card-title">Black Short</h3>
+          </div>
+          <div class="price_rating">
+              <h2>Rs.600</h2>
+              <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star grey" aria-hidden="true"></i>
+
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="card">
+      <div class="imgBx">
+          <a href="EUniform211b/ps8.html"> <img src="EUniform211b/IMAGES/pt8.jpg"></a>
+          <ul class="action">
+              <li>
+                  <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                  <span>Add to Cart</span>
+              </li>
+          </ul>
+      </div>
+      <div class="content">
+          <div class="productName">
+              <h3 class="card-title">Gray Short</h3>
+          </div>
+          <div class="price_rating">
+              <h2>Rs.600</h2>
+              <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star grey" aria-hidden="true"></i>
+                  <i class="fa fa-star grey" aria-hidden="true"></i>
+
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+  <div class="card">
+      <div class="imgBx">
+          <a href="EUniform211b/ps9.html"> <img src="EUniform211b/IMAGES/pt9.jpg"></a>
+          <ul class="action">
+              <li>
+                  <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                  <span>Add to Cart</span>
+              </li>
+          </ul>
+      </div>
+      <div class="content">
+          <div class="productName">
+              <h3 class="card-title">Green Short</h3>
+
+          </div>
+          <div class="price_rating">
+              <h2>Rs.600</h2>
+              <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+
+              </div>
+          </div>
+      </div>
+  </div>
+ 
+  <div class="card">
+      <div class="imgBx">
+          <a href="EUniform211b/ps11.html"> <img src="EUniform211b/IMAGES/pt11.jpg"></a>
+          <ul class="action">
+              <li>
+                  <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                  <span>Add to Cart</span>
+              </li>
+          </ul>
+      </div>
+      <div class="content">
+          <div class="productName">
+              <h3 class="card-title">Multi Color Short</h3>
+
+          </div>
+          <div class="price_rating">
+              <h2>Rs.600</h2>
+              <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="card">
+      <div class="imgBx">
+          <a href="EUniform211b/ps12.html"> <img src="EUniform211b/IMAGES/pt12.jpg"></a>
+          <ul class="action">
+              <li>
+                  <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                  <span>Add to Cart</span>
+              </li>
+          </ul>
+      </div>
+      <div class="content">
+          <div class="productName">
+              <h3 class="card-title">Red Short</h3>
+
+          </div>
+          <div class="price_rating">
+              <h2>Rs.600</h2>
+              <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+
+              </div>
+          </div>
+      </div>
+  </div>
+     <!-- pt shorts ends -->
+
+
+     <!-- pt track pants starts -->
+     <div class="card">
+      <div class="imgBx">
+          <a href="EUniform211b/pttrackpant1.html"><img src="EUniform211b/IMAGES/tpant1.jpg"></a>
+          <ul class="action">
+              <li>
+                  <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                  <span>Add to Cart</span>
+              </li>
+          </ul>
+      </div>
+      <div class="content">
+          <div class="productName">
+              <b>
+                  <h3 class="card-title">Black Track Pant</h3>
+              </b>
+          </div>
+          <div class="price_rating">
+              <h2>Rs.800</h2>
+              <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa  grey fa-star" aria-hidden="true"></i>
+
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="card">
+      <div class="imgBx">
+          <a href="EUniform211b/pttrackpant2.html"><img src="EUniform211b/IMAGES/tpant2.jpg">
+          </a>
+          <ul class="action">
+              <li>
+                  <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                  <span>Add to Cart</span>
+              </li>
+          </ul>
+      </div>
+      <div class="content">
+          <div class="productName">
+              <h3 class="card-title">Gray & Blue Track Pants</h3>
+          </div>
+          <div class="price_rating">
+              <h2>Rs.800</h2>
+              <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star grey" aria-hidden="true"></i>
+                  <i class="fa fa-star grey" aria-hidden="true"></i>
+
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="card">
+      <div class="imgBx">
+          <a href="EUniform211b/pttrackpant3.html"> <img src="EUniform211b/IMAGES/tpant3.jpg"></a>
+
+          <ul class="action">
+              <li>
+                  <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                  <span>Add to Cart</span>
+              </li>
+          </ul>
+      </div>
+      <div class="content">
+          <div class="productName">
+              <h3 class="card-title">Gray & Yellow Track Pant</h3>
+          </div>
+          <div class="price_rating">
+              <h2>Rs.800</h2>
+              <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="card">
+      <div class="imgBx">
+          <a href="EUniform211b/pttrackpant5.html"> <img src="EUniform211b/IMAGES/tpant5.jpg">
+          </a>
+          <ul class="action">
+              <li>
+                  <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                  <span>Add to Cart</span>
+              </li>
+          </ul>
+      </div>
+      <div class="content">
+          <div class="productName">
+              <h3 class="card-title">Green Track pant</h3>
+          </div>
+          <div class="price_rating">
+              <h2>Rs.800</h2>
+              <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star grey" aria-hidden="true"></i>
+                  <i class="fa fa-star grey" aria-hidden="true"></i>
+
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="card">
+      <div class="imgBx">
+          <a href="EUniform211b/pttrackpant8.html"><img src="EUniform211b/IMAGES/tpant8.jpg"></a>
+          <ul class="action">
+              <li>
+                  <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                  <span>Add to Cart</span>
+              </li>
+          </ul>
+      </div>
+      <div class="content">
+          <div class="productName">
+              <h3 class="card-title">Gray Track pant</h3>
+          </div>
+          <div class="price_rating">
+              <h2>Rs.800</h2>
+              <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star grey" aria-hidden="true"></i>
+                  <i class="fa fa-star grey" aria-hidden="true"></i>
+
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+  <div class="card">
+      <div class="imgBx">
+          <a href="EUniform211b/pttrackpant9.html"> <img src="EUniform211b/IMAGES/tpant9.jpg">
+          </a>
+          <ul class="action">
+              <li>
+                  <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                  <span>Add to Cart</span>
+              </li>
+          </ul>
+      </div>
+      <div class="content">
+          <div class="productName">
+              <h3 class="card-title">Navy Track pant</h3>
+
+          </div>
+          <div class="price_rating">
+              <h2>Rs.800</h2>
+              <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="card">
+      <div class="imgBx">
+          <a href="EUniform211b/pttrackpant10.html"> <img src="EUniform211b/IMAGES/tpant10.jpg">
+          </a>
+
+          <ul class="action">
+              <li>
+                  <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                  <span>Add to Cart</span>
+              </li>
+          </ul>
+      </div>
+      <div class="content">
+          <div class="productName">
+              <h3 class="card-title">Gray Red Track pant</h3>
+
+          </div>
+          <div class="price_rating">
+              <h2>Rs.800</h2>
+              <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="card">
+      <div class="imgBx">
+          <a href="EUniform211b/pttrackpant11.html"><img src="EUniform211b/IMAGES/tpant11.jpg"></a>
+          <ul class="action">
+              <li>
+                  <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                  <span>Add to Cart</span>
+              </li>
+          </ul>
+      </div>
+      <div class="content">
+          <div class="productName">
+              <h3 class="card-title">Gray Black Track pant</h3>
+
+          </div>
+          <div class="price_rating">
+              <h2>Rs.800</h2>
+              <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+
+              </div>
+          </div>
+      </div>
+  </div>
+     <!-- pt track pants ends -->
+
+
+     <!-- belts starts -->
+     <div class="card">
+      <div class="imgBx">
+          <a href="EUniform211b/belt1.html"><img src="EUniform211b/IMAGES/belt1.jpg"></a>
+          <ul class="action">
+              <li>
+                  <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                  <span>Add to Cart</span>
+              </li>
+          </ul>
+      </div>
+      <div class="content">
+          <div class="productName">
+              <b>
+                  <h3 class="card-title">School Belt</h3>
+              </b>
+          </div>
+          <div class="price_rating">
+              <h2>Rs. 750</h2>
+              <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa  grey fa-star" aria-hidden="true"></i>
+
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="card">
+      <div class="imgBx">
+          <a href="EUniform211b/belt2.html"> <img src="EUniform211b/IMAGES/belt2.jpg"></a>
+          <ul class="action">
+              <li>
+                  <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                  <span>Add to Cart</span>
+              </li>
+          </ul>
+      </div>
+      <div class="content">
+          <div class="productName">
+              <h3 class="card-title">School Belt</h3>
+          </div>
+          <div class="price_rating">
+              <h2>Rs. 750</h2>
+              <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star grey" aria-hidden="true"></i>
+                  <i class="fa fa-star grey" aria-hidden="true"></i>
+
+              </div>
+          </div>
+      </div>
+  </div>
+  <div id="accessories" class="card">
+      <div class="imgBx">
+          <a href="EUniform211b/belt3.html"><img src="EUniform211b/IMAGES/belt3.jpeg"></a>
+
+          <ul class="action">
+              <li>
+                  <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                  <span>Add to Cart</span>
+              </li>
+          </ul>
+      </div>
+      <div class="content">
+          <div class="productName">
+              <h3 class="card-title">School Belt</h3>
+          </div>
+          <div class="price_rating">
+              <h2>Rs. 750</h2>
+              <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="card">
+      <div class="imgBx">
+          <a href="EUniform211b/belt11.html"> <img src="EUniform211b/IMAGES/belt11.jpg"></a>
+          <ul class="action">
+              <li>
+                  <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                  <span>Add to Cart</span>
+              </li>
+          </ul>
+      </div>
+      <div class="content">
+          <div class="productName">
+              <h3 class="card-title">School Belt</h3>
+
+          </div>
+          <div class="price_rating">
+              <h2>Rs. 750</h2>
+              <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="card">
+      <div class="imgBx">
+          <a href="EUniform211b/belt4.html"><img src="EUniform211b/IMAGES/belt4.jpg"></a>
+          <ul class="action">
+              <li>
+                  <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                  <span>Add to Cart</span>
+              </li>
+          </ul>
+      </div>
+      <div class="content">
+          <div class="productName">
+              <h3 class="card-title">School Belt</h3>
+          </div>
+          <div class="price_rating">
+              <h2>Rs. 750</h2>
+              <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star grey" aria-hidden="true"></i>
+
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="card">
+      <div class="imgBx">
+          <a href="EUniform211b/belt5.html"> <img src="EUniform211b/IMAGES/belt5.jpg"></a>
+          <ul class="action">
+              <li>
+                  <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                  <span>Add to Cart</span>
+              </li>
+          </ul>
+      </div>
+      <div class="content">
+          <div class="productName">
+              <h3 class="card-title">School Belt</h3>
+          </div>
+          <div class="price_rating">
+              <h2>Rs. 750</h2>
+              <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star grey" aria-hidden="true"></i>
+                  <i class="fa fa-star grey" aria-hidden="true"></i>
+
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="card">
+      <div class="imgBx">
+          <a href="EUniform211b/belt6.html"> <img src="EUniform211b/IMAGES/belt6.jpg"></a>
+          <ul class="action">
+              <li>
+                  <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                  <span>Add to Cart</span>
+              </li>
+          </ul>
+      </div>
+      <div class="content">
+          <div class="productName">
+              <h3 class="card-title">School Belt</h3>
+          </div>
+          <div class="price_rating">
+              <h2>Rs. 750</h2>
+              <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star grey" aria-hidden="true"></i>
+
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="card">
+      <div class="imgBx">
+          <a href="EUniform211b/belt7.html"> <img src="EUniform211b/IMAGES/belt7.jpg"></a>
+          <ul class="action">
+              <li>
+                  <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                  <span>Add to Cart</span>
+              </li>
+          </ul>
+      </div>
+      <div class="content">
+          <div class="productName">
+              <h3 class="card-title">School Belt</h3>
+          </div>
+          <div class="price_rating">
+              <h2>Rs. 750</h2>
+              <div class="rating">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star grey" aria-hidden="true"></i>
+
+              </div>
+          </div>
+      </div>
+  </div>
+     <!-- belts ends -->
+
+     <!-- ties starts -->
+     <div class="card">
+      <div class="imgBx">
+              <a href="EUniform211b/ties1.html"><img src="EUniform211b/IMAGES/ties1.jpg"></a>
+              <ul class="action">
+                      <li>
+                              <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                              <span>Add to Cart</span>
+                      </li>
+              </ul>
+      </div>
+      <div class="content">
+              <div class="productName">
+                      <b>
+                              <h3 class="card-title">Red White Tie</h3>
+                      </b>
+              </div>
+              <div class="price_rating">
+                      <h2>Rs. 450</h2>
+                      <div class="rating">
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa  grey fa-star" aria-hidden="true"></i>
+
+                      </div>
+              </div>
+      </div>
+</div>
+<div class="card">
+      <div class="imgBx">
+              <a href="EUniform211b/ties2.html"><img src="EUniform211b/IMAGES/ties2.jpg"></a>
+              <ul class="action">
+                      <li>
+                              <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                              <span>Add to Cart</span>
+                      </li>
+              </ul>
+      </div>
+      <div class="content">
+              <div class="productName">
+                      <h3 class="card-title">Red Yellow Tie</h3>
+              </div>
+              <div class="price_rating">
+                      <h2>Rs. 450</h2>
+                      <div class="rating">
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star grey" aria-hidden="true"></i>
+                              <i class="fa fa-star grey" aria-hidden="true"></i>
+
+                      </div>
+              </div>
+      </div>
+</div>
+
+<div class="card">
+      <div class="imgBx">
+              <a href="EUniform211b/ties4.html"><img src="EUniform211b/IMAGES/ties4.webp"></a>
+              <ul class="action">
+                      <li>
+                              <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                              <span>Add to Cart</span>
+                      </li>
+              </ul>
+      </div>
+      <div class="content">
+              <div class="productName">
+                      <h3 class="card-title">Red Black Tie</h3>
+              </div>
+              <div class="price_rating">
+                      <h2>Rs. 450</h2>
+                      <div class="rating">
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star grey" aria-hidden="true"></i>
+
+                      </div>
+              </div>
+      </div>
+</div>
+<div class="card">
+      <div class="imgBx">
+              <a href="EUniform211b/ties6.html"><img src="EUniform211b/IMAGES/ties6.jpg"></a>
+              <ul class="action">
+                      <li>
+                              <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                              <span>Add to Cart</span>
+                      </li>
+              </ul>
+      </div>
+      <div class="content">
+              <div class="productName">
+                      <h3 class="card-title">Blue Yellow Tie</h3>
+              </div>
+              <div class="price_rating">
+                      <h2>Rs. 450</h2>
+                      <div class="rating">
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star grey" aria-hidden="true"></i>
+
+                      </div>
+              </div>
+      </div>
+</div>
+<div class="card">
+      <div class="imgBx">
+              <a href="EUniform211b/ties7.html"> <img src="EUniform211b/IMAGES/ties7.jpg"></a>
+              <ul class="action">
+                      <li>
+                              <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                              <span>Add to Cart</span>
+                      </li>
+              </ul>
+      </div>
+      <div class="content">
+              <div class="productName">
+                      <h3 class="card-title">Gray Blue Tie</h3>
+              </div>
+              <div class="price_rating">
+                      <h2>Rs. 450</h2>
+                      <div class="rating">
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star grey" aria-hidden="true"></i>
+
+                      </div>
+              </div>
+      </div>
+</div>
+<div class="card">
+      <div class="imgBx">
+              <a href="EUniform211b/ties8.html"> <img src="EUniform211b/IMAGES/ties8.jpg"></a>
+              <ul class="action">
+                      <li>
+                              <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                              <span>Add to Cart</span>
+                      </li>
+              </ul>
+      </div>
+      <div class="content">
+              <div class="productName">
+                      <h3 class="card-title">Blue White Tie</h3>
+              </div>
+              <div class="price_rating">
+                      <h2>Rs. 450</h2>
+                      <div class="rating">
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star grey" aria-hidden="true"></i>
+                              <i class="fa fa-star grey" aria-hidden="true"></i>
+
+                      </div>
+              </div>
+      </div>
+</div>
+<div class="card">
+      <div class="imgBx">
+              <a href="EUniform211b/ties11.html"><img src="EUniform211b/IMAGES/ties11.webp"></a>
+              <ul class="action">
+                      <li>
+                              <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                              <span>Add to Cart</span>
+                      </li>
+              </ul>
+      </div>
+      <div class="content">
+              <div class="productName">
+                      <h3 class="card-title">Gray Red Tie</h3>
+
+              </div>
+              <div class="price_rating">
+                      <h2>Rs. 450</h2>
+                      <div class="rating">
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+
+                      </div>
+              </div>
+      </div>
+</div>
+<div class="card">
+      <div class="imgBx">
+              <a href="EUniform211b/ties12.html"><img src="EUniform211b/IMAGES/ties12.webp"></a>
+              <ul class="action">
+                      <li>
+                              <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                              <span>Add to Cart</span>
+                      </li>
+              </ul>
+      </div>
+      <div class="content">
+              <div class="productName">
+                      <h3 class="card-title">Red Tie</h3>
+
+              </div>
+              <div class="price_rating">
+                      <h2>Rs. 450</h2>
+                      <div class="rating">
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+
+                      </div>
+              </div>
+      </div>
+</div>
+     <!-- ties ends -->
+
+<!-- logos starts -->
+<div class="card">
+    <div class="imgBx">
+            <a href="EUniform211b/logo1.html"><img src="EUniform211b/IMAGES/sch-logo-1.png"></a>
+            <ul class="action">
+                    <li>
+                            <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                            <span>Add to Cart</span>
+                    </li>
+            </ul>
+    </div>
+    <div class="content">
+            <div class="productName">
+                    <b>
+                            <h3 class="card-title">School Logo</h3>
+                    </b>
+            </div>
+            <div class="price_rating">
+                    <h2>Rs. 450</h2>
+                    <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa  grey fa-star" aria-hidden="true"></i>
+
+                    </div>
+            </div>
+    </div>
+</div>
+<div class="card">
+    <div class="imgBx">
+            <a href="EUniform211b/logo2.html"><img src="EUniform211b/IMAGES/sch-logo-2.png"></a>
+            <ul class="action">
+                    <li>
+                            <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                            <span>Add to Cart</span>
+                    </li>
+            </ul>
+    </div>
+    <div class="content">
+            <div class="productName">
+                    <h3 class="card-title">School Logo</h3>
+            </div>
+            <div class="price_rating">
+                    <h2>Rs. 450</h2>
+                    <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star grey" aria-hidden="true"></i>
+                            <i class="fa fa-star grey" aria-hidden="true"></i>
+
+                    </div>
+            </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="imgBx">
+            <a href="EUniform211b/logo3.html"><img src="EUniform211b/IMAGES/sch-logo-3.png"></a>
+            <ul class="action">
+                    <li>
+                            <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                            <span>Add to Cart</span>
+                    </li>
+            </ul>
+    </div>
+    <div class="content">
+            <div class="productName">
+                    <h3 class="card-title">School Logo</h3>
+            </div>
+            <div class="price_rating">
+                    <h2>Rs. 450</h2>
+                    <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star grey" aria-hidden="true"></i>
+
+                    </div>
+            </div>
+    </div>
+</div>
+<div class="card">
+    <div class="imgBx">
+            <a href="EUniform211b/logo4.html"><img src="EUniform211b/IMAGES/sch-logo-4.jpg"></a>
+            <ul class="action">
+                    <li>
+                            <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                            <span>Add to Cart</span>
+                    </li>
+            </ul>
+    </div>
+    <div class="content">
+            <div class="productName">
+                    <h3 class="card-title">School Logo</h3>
+            </div>
+            <div class="price_rating">
+                    <h2>Rs. 450</h2>
+                    <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star grey" aria-hidden="true"></i>
+
+                    </div>
+            </div>
+    </div>
+</div>
+<div class="card">
+    <div class="imgBx">
+            <a href="EUniform211b/logo5.html"> <img src="EUniform211b/IMAGES/sch-logo-5.png"></a>
+            <ul class="action">
+                    <li>
+                            <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                            <span>Add to Cart</span>
+                    </li>
+            </ul>
+    </div>
+    <div class="content">
+            <div class="productName">
+                    <h3 class="card-title">School Logo</h3>
+            </div>
+            <div class="price_rating">
+                    <h2>Rs. 450</h2>
+                    <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star grey" aria-hidden="true"></i>
+
+                    </div>
+            </div>
+    </div>
+</div>
+<div class="card">
+    <div class="imgBx">
+            <a href="EUniform211b/logo6.html"> <img src="EUniform211b/IMAGES/sch-logo-6.png"></a>
+            <ul class="action">
+                    <li>
+                            <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                            <span>Add to Cart</span>
+                    </li>
+            </ul>
+    </div>
+    <div class="content">
+            <div class="productName">
+                    <h3 class="card-title">School Logo</h3>
+            </div>
+            <div class="price_rating">
+                    <h2>Rs. 450</h2>
+                    <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star grey" aria-hidden="true"></i>
+                            <i class="fa fa-star grey" aria-hidden="true"></i>
+
+                    </div>
+            </div>
+    </div>
+</div>
+<div class="card">
+    <div class="imgBx">
+            <a href="EUniform211b/logo8.html"><img src="EUniform211b/IMAGES/sch-logo-8.png"></a>
+            <ul class="action">
+                    <li>
+                            <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                            <span>Add to Cart</span>
+                    </li>
+            </ul>
+    </div>
+    <div class="content">
+            <div class="productName">
+                    <h3 class="card-title">School Logo</h3>
+
+            </div>
+            <div class="price_rating">
+                    <h2>Rs. 450</h2>
+                    <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+
+                    </div>
+            </div>
+    </div>
+</div>
+<div class="card">
+    <div class="imgBx">
+            <a href="EUniform211b/logo9.html"><img src="EUniform211b/IMAGES/sch-logo-9.png"></a>
+            <ul class="action">
+                    <li>
+                            <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                            <span>Add to Cart</span>
+                    </li>
+            </ul>
+    </div>
+    <div class="content">
+            <div class="productName">
+                    <h3 class="card-title">School Logo</h3>
+
+            </div>
+            <div class="price_rating">
+                    <h2>Rs. 450</h2>
+                    <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+
+                    </div>
+            </div>
+    </div>
+</div>
+<!-- logos ends -->
+        
+        
+
+<!-- socks starts -->
+<div class="card">
+  <div class="imgBx">
+          <a href="EUniform211b/socks4.html"><img src="EUniform211b/IMAGES/socks4.jpg"></a>
+          <ul class="action">
+                  <li>
+                          <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                          <span>Add to Cart</span>
+                  </li>
+          </ul>
+  </div>
+  <div class="content">
+          <div class="productName">
+                  <h3 class="card-title">White Socks</h3>
+          </div>
+          <div class="price_rating">
+                  <h2>Rs. 500</h2>
+                  <div class="rating">
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star grey" aria-hidden="true"></i>
+
+                  </div>
+          </div>
+  </div>
+</div>
+<div class="card">
+  <div class="imgBx">
+          <a href="EUniform211b/socks5.html"><img src="EUniform211b/IMAGES/socks5.jpg"></a>
+          <ul class="action">
+                  <li>
+                          <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                          <span>Add to Cart</span>
+                  </li>
+          </ul>
+  </div>
+  <div class="content">
+          <div class="productName">
+                  <h3 class="card-title">Gray Socks</h3>
+          </div>
+          <div class="price_rating">
+                  <h2>Rs. 500</h2>
+                  <div class="rating">
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star grey" aria-hidden="true"></i>
+                          <i class="fa fa-star grey" aria-hidden="true"></i>
+
+                  </div>
+          </div>
+  </div>
+</div>
+<div class="card">
+  <div class="imgBx">
+          <a href="EUniform211b/socks6.html"><img src="EUniform211b/IMAGES/socks6.jpeg"></a>
+          <ul class="action">
+                  <li>
+                          <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                          <span>Add to Cart</span>
+                  </li>
+          </ul>
+  </div>
+  <div class="content">
+          <div class="productName">
+                  <h3 class="card-title">Black Socks</h3>
+          </div>
+          <div class="price_rating">
+                  <h2>Rs. 500</h2>
+                  <div class="rating">
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star grey" aria-hidden="true"></i>
+
+                  </div>
+          </div>
+  </div>
+</div>
+<div class="card">
+  <div class="imgBx">
+          <a href="EUniform211b/socks7.html"> <img src="EUniform211b/IMAGES/socks7.jpg"></a>
+          <ul class="action">
+                  <li>
+                          <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                          <span>Add to Cart</span>
+                  </li>
+          </ul>
+  </div>
+  <div class="content">
+          <div class="productName">
+                  <h3 class="card-title">Dark Gray Socks</h3>
+          </div>
+          <div class="price_rating">
+                  <h2>Rs. 500</h2>
+                  <div class="rating">
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star grey" aria-hidden="true"></i>
+
+                  </div>
+          </div>
+  </div>
+</div>
+<div class="card">
+  <div class="imgBx">
+          <a href="EUniform211b/socks8.html"><img src="EUniform211b/IMAGES/socks8.png"></a>
+          <ul class="action">
+                  <li>
+                          <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                          <span>Add to Cart</span>
+                  </li>
+          </ul>
+  </div>
+  <div class="content">
+          <div class="productName">
+                  <h3 class="card-title">Dark Blue Socks</h3>
+          </div>
+          <div class="price_rating">
+                  <h2>Rs. 500</h2>
+                  <div class="rating">
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star grey" aria-hidden="true"></i>
+                          <i class="fa fa-star grey" aria-hidden="true"></i>
+
+                  </div>
+          </div>
+  </div>
+</div>
+
+
+<div class="card">
+  <div class="imgBx">
+          <a href="EUniform211b/socks9.html"><img src="EUniform211b/IMAGES/socks9.jpg"></a>
+          <ul class="action">
+                  <li>
+                          <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                          <span>Add to Cart</span>
+                  </li>
+          </ul>
+  </div>
+  <div class="content">
+          <div class="productName">
+                  <h3 class="card-title">Blue Socks</h3>
+
+          </div>
+          <div class="price_rating">
+                  <h2>Rs. 500</h2>
+                  <div class="rating">
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+
+                  </div>
+          </div>
+  </div>
+</div>
+<div class="card">
+  <div class="imgBx">
+          <a href="EUniform211b/socks10.html"><img src="EUniform211b/IMAGES/socks10.jpg"></a>
+          <ul class="action">
+                  <li>
+                          <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                          <span>Add to Cart</span>
+                  </li>
+          </ul>
+  </div>
+  <div class="content">
+          <div class="productName">
+                  <h3 class="card-title">Gray Socks</h3>
+
+          </div>
+          <div class="price_rating">
+                  <h2>Rs. 500</h2>
+                  <div class="rating">
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+
+                  </div>
+          </div>
+  </div>
+</div>
+<div class="card">
+  <div class="imgBx">
+          <a href="EUniform211b/socks11.html"><img src="EUniform211b/IMAGES/socks11.jpg"></a>
+          <ul class="action">
+                  <li>
+                          <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+                          <span>Add to Cart</span>
+                  </li>
+          </ul>
+  </div>
+  <div class="content">
+          <div class="productName">
+                  <h3 class="card-title">Navy Blue Socks</h3>
+
+          </div>
+          <div class="price_rating">
+                  <h2>Rs. 500</h2>
+                  <div class="rating">
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+
+                  </div>
+          </div>
+  </div>
+</div>
+<!-- socks ends -->
+
+<!-- shoes starts -->
+<div class="card">
+  <div class="imgBx">
+      <a href="EUniform211b/shoes2.html"><img src="EUniform211b/IMAGES/shoes2.jpg"></a>
+      <ul class="action">
+          <li>
+              <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+              <span>Add to Cart</span>
+          </li>
+      </ul>
+  </div>
+  <div class="content">
+      <div class="productName">
+          <h3 class="card-title">School Shoes</h3>
+      </div>
+      <div class="price_rating">
+          <h2>Rs.750</h2>
+          <div class="rating">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star grey" aria-hidden="true"></i>
+              <i class="fa fa-star grey" aria-hidden="true"></i>
+
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="imgBx">
+      <a href="EUniform211b/shoes2.html"><img src="EUniform211b/IMAGES/shoes2.jpg"></a>
+      <ul class="action">
+          <li>
+              <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+              <span>Add to Cart</span>
+          </li>
+      </ul>
+  </div>
+  <div class="content">
+      <div class="productName">
+          <h3 class="card-title">School Shoes</h3>
+      </div>
+      <div class="price_rating">
+          <h2>Rs.750</h2>
+          <div class="rating">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star grey" aria-hidden="true"></i>
+
+          </div>
+      </div>
+  </div>
+</div>
+<div class="card">
+  <div class="imgBx">
+      <a href="EUniform211b/shoes5.html"> <img src="EUniform211b/IMAGES/shoes5.jpg"></a>
+      <ul class="action">
+          <li>
+              <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+              <span>Add to Cart</span>
+          </li>
+      </ul>
+  </div>
+  <div class="content">
+      <div class="productName">
+          <h3 class="card-title">School Shoes</h3>
+      </div>
+      <div class="price_rating">
+          <h2>Rs.750</h2>
+          <div class="rating">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star grey" aria-hidden="true"></i>
+              <i class="fa fa-star grey" aria-hidden="true"></i>
+
+          </div>
+      </div>
+  </div>
+</div>
+<div class="card">
+  <div class="imgBx">
+      <a href="EUniform211b/shoes6.html"> <img src="EUniform211b/IMAGES/shoes6.jpg"></a>
+      <ul class="action">
+          <li>
+              <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+              <span>Add to Cart</span>
+          </li>
+      </ul>
+  </div>
+  <div class="content">
+      <div class="productName">
+          <h3 class="card-title">School Shoes</h3>
+      </div>
+      <div class="price_rating">
+          <h2>Rs.750</h2>
+          <div class="rating">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star grey" aria-hidden="true"></i>
+
+          </div>
+      </div>
+  </div>
+</div>
+<div class="card">
+  <div class="imgBx">
+      <a href="EUniform211b/shoes8.html"> <img src="EUniform211b/IMAGES/shoes8.jpg"></a>
+      <ul class="action">
+          <li>
+              <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+              <span>Add to Cart</span>
+          </li>
+      </ul>
+  </div>
+  <div class="content">
+      <div class="productName">
+          <h3 class="card-title">School Shoes</h3>
+      </div>
+      <div class="price_rating">
+          <h2>Rs.750</h2>
+          <div class="rating">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star grey" aria-hidden="true"></i>
+              <i class="fa fa-star grey" aria-hidden="true"></i>
+
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<div class="card">
+  <div class="imgBx">
+      <a href="EUniform211b/shoes9.html"> <img src="EUniform211b/IMAGES/shoes9.jpg"></a>
+      <ul class="action">
+          <li>
+              <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+              <span>Add to Cart</span>
+          </li>
+      </ul>
+  </div>
+ <div class="content">
+      <div class="productName">
+          <h3 class="card-title">School Shoes</h3>
+      </div>
+      <div class="price_rating">
+          <h2>Rs.750</h2>
+          <div class="rating">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+
+          </div>
+      </div>
+  </div>
+</div>
+<div class="card">
+  <div class="imgBx">
+      <a href="EUniform211b/shoes10.html"><img src="EUniform211b/IMAGES/shoes10.jpg"></a>
+      <ul class="action">
+          <li>
+              <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+              <span>Add to Cart</span>
+          </li>
+      </ul>
+  </div>
+  <div class="content">
+      <div class="productName">
+          <h3 class="card-title">School Shoes</h3>
+      </div>
+      <div class="price_rating">
+          <h2>Rs.750</h2>
+          <div class="rating">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+
+          </div>
+      </div>
+  </div>
+</div>
+<div class="card">
+  <div class="imgBx">
+      <a href="EUniform211b/shoes11.html"> <img src="EUniform211b/IMAGES/shoes11.webp"></a>
+      <ul class="action">
+          <li>
+              <i class="fa fa-shopping-cart" aria-hidden="true" onclick="atc()"></i>
+              <span>Add to Cart</span>
+          </li>
+      </ul>
+  </div>
+  <div class="content">
+      <div class="productName">
+          <h3 class="card-title">School Shoes</h3>
+      </div>
+      <div class="price_rating">
+          <h2>Rs.750</h2>
+          <div class="rating">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+
+          </div>
+      </div>
+  </div>
+</div>
+<!-- shoes ends -->
+        
+        
+        
+  </div>
+</div>
+
+                            
+ 
+
+
+  </div>
+</div>
+
+                           
+
+<!-- main contect ends -->
+<!-- pics ends -->
+
+         
+    <!-- image filters ends -->
+
+
+
+   <!-- footer starts -->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col">
+      <img src="images/main-logo.png" alt="" height="55px" style="border-radius: 10px; margin-top: -30px; margin-bottom: 20px;">
+      <h4>About Us</h4>
+        <ul>
+          <li style="color: rgba(255, 255, 255, 0.863); padding: 0px 10px;">A-1 uniforms was founded in 2016 and since then we have been one of the leading Uniform Manufacturers in the country. We supply many schools in country and give them the best uniforms. We supply affordable school uniforms for girls and boys.</li>
+          <!-- <li><a href="#">our services</a></li> -->
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="EUniform211b/cardboy.html"> Shirts</a></li>
+          <li><a href="EUniform211b/pant.html">Pants</a></li>
+          <li><a href="EUniform211b/skirt.html">Skirts</a></li>
+          <li><a href="EUniform211b/card.html">Frocks</a></li>
+          <li><a href="EUniform211b/pt-shirt.html">P.T. Wear</a></li>
+          <li><a href="EUniform211b/belt.html">Belts</a></li>
+          <li><a href="EUniform211b/ties.html">Ties</a></li>
+          <li><a href="EUniform211b/logos.html">Logos</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+          <li><a href="faqs.html">FAQ's</a></li>
+          <li><a href="uniform-sizes.html">Sizing & Measurement</a></li>
+          <li><a href="galeery.html">Gallery</a></li>
+          <li><a href="feedBack.html">Feedback</a></li>
+          <li><a href="loginform.html">My Account</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>follow us</h4>
+        <div class="wrapper">
+          <div class="icon facebook">
+             <div class="tooltip">
+                Facebook
+             </div>
+             <span><a style="color: white ;" href="https://www.facebook.com/"><i class="fa fa-facebook-f"></i></a></span>
+          </div>
+          <div class="icon twitter">
+             <div class="tooltip">
+                Twitter
+             </div>
+             <span><a style="color: white ;" href="https://twitter.com/?lang=en"><i class="fa fa-twitter"></i></a></span>
+          </div>
+          <div class="icon instagram">
+             <div class="tooltip">
+                Instagram
+             </div>
+             <span><a style="color: white ;" href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram"></i></a></span>
+          </div>
+          <div class="icon Whatsapp">
+             <div class="tooltip">
+                Whatsapp
+             </div>
+             <span><a style="color: white ;" href="https://www.whatsapp.com/"><i class="fa fa-whatsapp"></i></a></span>
+          </div>
+          <div class="icon youtube">
+             <div class="tooltip">
+                YouTube
+             </div>
+             <span><a style="color: white ;" href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a></span>
+          </div>
+
+        </div>
+        <div class="download-btns">
+          <h4 class="download-btns-heading">Download Our App</h4>
+          <div class="download-btns-img">
+            <a href="https://www.apple.com/app-store/"><img src="images/download-btns-imgs/apple-store.png" alt="" height="30px"></a>
+            <a href="https://play.google.com/store/apps/?hl=en&gl=US"><img src="images/download-btns-imgs/play-store.png" alt="" height="30px"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr style="color: white;">
+    <p class="copyright">Copyright &copy; 2022 <span style="color: orangered; cursor: pointer;font-size: 20px;font-family: 'Playfair Display', serif;">A1 Uniforms</span>. All Rights Reserved</p>
+    <marquee behavior="" direction="" style="color: yellow;" scrollamount="10">This Website is Created By "<span style="color: orangered; cursor: pointer;font-weight: bold;">Muhammad Sufyan</span>" , "<span style="color: orangered; cursor: pointer;font-weight: bold;">Muhammad Rayyan</span>" , "<span style="color: orangered; cursor: pointer;font-weight: bold;">Iqra</span>" , "<span style="color: orangered; cursor: pointer;font-weight: bold;">Saleha</span>" & "<span style="color: orangered; cursor: pointer;font-weight: bold;">Mohsin</span>"... </marquee>
+  </div>
+</footer>
+
+<!-- footer ends -->
+
+
+<!-- scroll top top button starts -->
+<style>
+  .to-top{
+    background-color: orangered;
+    position: fixed;
+    bottom: 0px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #1f1f1f;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+  }
+  .to-top:hover{
+    background-color: black;
+  }
+  .to-top.active{
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+  }
+</style>
+<a href="#" class="to-top">
+  <i class="fa fa-chevron-up"></i>
+</a>
+
+<script>
+  const toTop = document.querySelector(".to-top");
+  window.addEventListener("scroll", () => {
+    if(window.pageYOffset > 100) {
+      toTop.classList.add("active");
+    }
+    else{
+      toTop.classList.remove("active");
+    }
+  })
+</script>
+<!-- scroll top top button ends -->
+
+
+<!-- 
+  ================================
+  ================================
+
+  JAVA SCRIPTS CODES STARTS HERE
+
+  ================================
+  ================================
+ -->
+<script src="jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!-- login js -->
+<script>
+  function login()
+  {
+      window.location="loginform.html"
+  }
+</script>
+
+<!-- Cart JS -->
+<script>
+  function cart()
+  {
+      window.location="cart.html"
+  }
+</script>
+<!-- search js -->
+<script>
+  function search() {
+    window.location="search-uniform.html"
+  }
+</script>
+
+
+
+
+    
+
+     <!-- image filter -->
+
+     <script>
+       $(document).ready(function(){
+
+        $('#search').click(function(){
+
+          var checker = 0;
+          for(var i = 0; i < 96 ; i++){
+            var card = $("div").filter(".card")[i];
+            var title = $("h3").filter(".card-title")[i].innerText.toUpperCase();
+
+            if(title.indexOf($("#inp").val().toUpperCase()) > -1){
+              card.style.display = 'block';
+              checker++;
+            }
+            else{
+              card.style.display = 'none';
+            }
+          }
+
+          if(checker > 0){
+            $("#not_find_any_thing").text("");
+
+          }
+          else{
+            $("#not_find_any_thing").text("No Result Found").fadeIn();
+          }
+        });
+       });
+     </script>
+     <!-- search suggestion -->
+     <script src="jquery-ui-1.13.1.custom/jquery-ui.js"></script>
+     <script src="jquery-ui-1.13.1.custom/jquery-ui.min.js"></script>
+     <script>
+      var uniforms=['Shirt','Pant','Skirt','Short','Blue','Orange','Green','Red','Yellow','Tie','Belt','Shoes','Socks','White','Shoe','Strip','Check','Logo','Frock', 'Gray' ,'Blue Shirt','Green Shirt' ,'Orange Shirt' ,'Pink Shirt' ,'Navy', 'Red Shirt' ,'Yellow Shirt', 'Check Shirt','Dark Gray', 'Dark Gray Pant','Gray Pant','Blue Pant','Gray Shirt','Brown Pant','Light Gray','Light Gray Pant','Pencil Gray Pant','Black Skirt','White Skirt','Blue Skirt','Brown Skirt','Black Shirt','Yellow Shirt','White Short','Blue Short','Gray Short','Brown Short','Red Short','Track Pant','Track','School','School Belt'];
+      $(document).ready(function(){
+          $('.input').autocomplete({
+              source:uniforms
+          },{});
+      });
+  </script>
+
+<!-- added to cart -->
+<script>
+    function atc(){
+         confirm('This item has been added to Cart')
+     }
+ </script>
+
+  
+</body>
+</html>
+
+
+
